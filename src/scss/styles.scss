@@ -1,0 +1,47 @@
+// Import all of Bootstrap's CSS
+/* @import "~bootstrap/scss/bootstrap"; */
+
+// Custom.scss
+
+$grid-breakpoints: (
+    xs: 0,
+    lg: 768px,
+    xl: 1280px,
+    xxl: 1440px,
+);
+
+// Source mixin
+@mixin make-container($padding-x: $container-padding-x) {
+    width: 100%;
+    padding-right: $padding-x;
+    padding-left: $padding-x;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/_variables-dark.scss";
+@import "~bootstrap/scss/maps";
+
+@import "~bootstrap/scss/mixins";
+@mixin row-cols($count) {
+    > * {
+        flex: 0 0 auto;
+        width: divide(100, $count);
+    }
+}
+
+/* @import "~bootstrap/scss/root"; */
+@import "~bootstrap/scss/reboot";
+/* @import "~bootstrap/scss/type"; */
+@import "~bootstrap/scss/containers";
+@import "~bootstrap/scss/grid";
+
+@import "core/_vars";
+@import "core/_fonts";
+@import "core/_globals";
+
+@import "layout/_header";
+
+@import "pages/_home";

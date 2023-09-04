@@ -1,0 +1,31 @@
+.hero {
+    padding: var(--padding-section) 0;
+    &--info {
+        display: grid;
+        place-content: baseline;
+        row-gap: 2.125rem;
+    }
+
+    &--img {
+        position: relative;
+        display: grid;
+        place-items: center;
+
+        &::before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            width: 800px;
+            height: 700px;
+            background: radial-gradient(
+                ellipse at center,
+                rgba(211, 180, 24, 1) -40%,
+                rgba(0, 0, 0, 0) 60%
+            );
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}
