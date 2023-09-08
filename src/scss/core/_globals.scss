@@ -1,5 +1,5 @@
 body {
-    background: var(--color-gris-1);
+    background: var(--color-blanco-1);
     color: var(--color-blanco-2);
     font-family: var(--font-primaria-regular);
 }
@@ -15,10 +15,10 @@ p {
 }
 
 .custom-container {
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(xs) {
         @include make-container(48px);
     }
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(md) {
         @include make-container(192px);
     }
     @include media-breakpoint-up(xl) {
@@ -30,6 +30,10 @@ p {
     }
 }
 
+.font-secondary {
+    font-family: var(--font-secundaria-regular);
+}
+
 .text-2xl {
     font-size: 4.375rem;
     line-height: 5.4688rem;
@@ -39,3 +43,23 @@ p {
     font-size: 1.75rem;
     line-height: 2.3275rem;
 }
+
+.title-underline {
+    display: grid;
+    row-gap: 1rem;
+    font-family: var(--font-primaria-bold);
+   
+    &::after {
+        content: "";
+        display: block;
+        width: 40px;
+        height: 8px;
+        background: var(--color-amarillo);
+    }
+    // &.title-center {
+    //     place-items: start;
+    // }
+}
+
+
+
