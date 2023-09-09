@@ -1,5 +1,75 @@
 .footer{
+    padding: 24px 0;
     background: var(--color-primario-azul-400);
     color: var(--color-blanco-1);
     font-family: var(--font-secundaria-regular);
+
+    .row{
+        padding-bottom:40px;
+        margin-top: 32px;
+        border-bottom: 1px solid var(--color-blanco-1);
+    }
+    .desplegable{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    h3{
+        margin:24px 0;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    ul{
+        padding: 0;
+    }
+
+    ul li{
+        list-style: none;
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 16px;
+    }
+    ul li:last-child{
+        margin-bottom: 0;
+    }
+    &--socials{
+        display: flex;
+        gap:16px;
+
+    }
+    &--sponsors{
+        margin:2rem 0;
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    &--legales{
+        text-align: center;
+        p{
+            margin-bottom: 16px;
+            font-size: 12px;
+            line-height: 16px; 
+        }
+
+        .asociacion{
+            color:var(--color-amarillo);
+        }
+        .separador{
+            color:var(--color-amarillo-2);
+        }
+
+        p:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media (min-width:768px){
+    .footer{
+
+        &--sponsors{
+            gap:64px;
+        }
+    }
 }

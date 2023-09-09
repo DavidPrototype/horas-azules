@@ -14,6 +14,14 @@ p {
     margin: 0;
 }
 
+.strong-circular {
+    font-family: var(--font-primaria-bold);
+}
+
+.strong-helvetica {
+    font-family: var(--font-secundaria-bold);
+}
+
 .custom-container {
     @include media-breakpoint-up(xs) {
         @include make-container(48px);
