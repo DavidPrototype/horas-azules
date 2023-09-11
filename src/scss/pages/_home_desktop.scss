@@ -1,0 +1,98 @@
+@media (min-width:1024px){
+        .hero{
+            padding: 34px 0;
+
+            &--info{
+                padding: 48px 64px;
+
+                h1{
+                    font-size: 64px;
+                    line-height: 72px;
+                }
+                p{
+                    font-size: 36px;
+                    line-height: normal;
+                }
+            }
+            &--img{
+               
+                .tdc{
+                  width: 239px;
+                  height: 150px;
+                  position: absolute;
+                  left: -70px;
+                  top: 40px;
+                }
+            }
+
+            &--badge{
+                left: -70px;
+                bottom: 16px;  
+                grid-column: 2/3;
+                grid-row: 3/4;
+                
+                img{
+                    width: 32px;
+                }
+                p.badge-title{
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+                
+            }
+            &--bonificacion{
+                flex-direction: row;
+                margin: 48px auto;
+                gap: 24px;
+                font-size: 20px;
+                line-height:28px;
+                
+
+                .badge--image{
+                 display:block;
+                }
+                .badge--image2{
+                  display:none;
+                  
+                }
+            
+            }
+        }
+
+        .promociones{
+            padding: 96px 0;
+
+            &--info{               
+                font-size: 47px;
+                line-height: 51px;
+              }
+            .container-carrusel {
+               margin-top: -110px;
+            }
+            &--carrusel{
+                display: grid;
+                gap:40px;
+                grid-template-columns: repeat(6,1fr);
+                grid-template-rows: repeat(2,1fr);
+                overflow-x: auto;
+                height: auto;
+
+                .col-xl-8{
+                    width: 100%;
+                }
+                div.col-xl-8:first-child{
+                    padding-top: 128px;
+                }
+                div.col-xl-8:last-child{
+                    padding-bottom: 128px;
+                }
+                div:nth-child(odd){
+                    grid-column: 2/4;
+                }
+                div:nth-child(even){
+                    grid-column: 4/6;
+                }
+            }
+        }
+
+}
