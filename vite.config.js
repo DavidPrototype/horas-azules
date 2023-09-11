@@ -2,6 +2,7 @@ const path = require("path");
 
 export default {
     root: path.resolve(__dirname, "src"),
+    base: "",
     publicDir: path.resolve(__dirname, "public"),
     build: {
         /* assetsDir: "img", */
