@@ -116,43 +116,54 @@
             }
         }
 
-        &--info {
-            width: auto;
-            grid-column: 1/2;
-            grid-row: 1/2;
-
-            h2 {
-                font-size: 2.9375rem;
-                line-height: 3.1875rem;
+        .app {
+            padding: 0 90px 0 0;
+            .custom-container {
+                padding: 0;
+                margin: 0;
             }
 
-            p {
-                padding-left: 6rem;
-                font-size: 1.25rem;
-                line-height: 1.75rem;
+            .row {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                align-items: center;
+            }
+            &--instrucciones {
+                width: auto;
+                right: 142px;
+            }
+            &--mockup {
+                grid-row: 1/3;
+                img.img-portrait {
+                    display: none;
+                }
+                img.img-desktop {
+                    display: block;
+                }
+                img.qr {
+                    width: 260px;
+                    top: 64px;
+                    right: -350px;
+                }
             }
 
-            a {
-                margin-left: 5.625rem;
-            }
-        }
+            &--info {
+                grid-column: 2/3;
+                grid-row: 1/2;
+                width: auto;
 
-        &--card {
-            position: relative;
-            bottom: 4.375rem;
-
-            & .badge--image {
-                padding: 0.75rem;
-                width: 3.5rem;
-                height: 3.5rem;
-            }
-            & p:first-of-type {
-                font-size: 1.5rem;
-                line-height: 2rem;
-            }
-            & p:last-of-type {
-                font-size: 1.25rem;
-                line-height: 1.75rem;
+                h2 {
+                    font-size: 47px;
+                    line-height: 51px;
+                }
+                p {
+                    padding-left: 96px;
+                    font-size: 20px;
+                    line-height: 28px;
+                }
+                a {
+                    display: none;
+                }
             }
         }
     }
