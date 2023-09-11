@@ -12,6 +12,36 @@
       padding: 1.5rem 1rem;
       border-radius: 1rem;
       background: linear-gradient(120deg, #0D0B79 -3.87%, #046AC0 32.52%, #1DACBA 56.46%, #85C249 83.65%);
+  
+  }
+  &--img{
+    position: relative;
+    .tdc{
+      width: 139px;
+      height: 87px;
+      position: absolute;
+      left: 12px;
+      bottom: 16px;
+    }
+  }
+
+  &--badge{
+    display: flex;
+    gap:4px;
+    padding: 4px 8px;
+    border-radius: 16px;
+    background:var(--color-amarillo);
+    color: var(--color-azul-2);
+    position: relative;
+    left: 12px;
+    bottom: 20px;
+    width: 75%;
+
+    p{
+      font-size: 14px;
+      line-height: 14px;
+    }
+
   }
   & h1{
     font-size: 2.25rem;
@@ -43,6 +73,9 @@
       padding: 0.75rem;
       width: 56px;
       height: 56px;
+    }
+    .badge--image2{
+      display:none;
     }
   }
 
@@ -82,6 +115,19 @@
   .row{
     gap:1.5rem;
   }
+
+  &--image{
+    img{
+      width: auto;
+    }
+    .img-mobile{
+      width: auto;
+    }
+    
+    .img-portrait{
+      display: none;
+    }
+  }
   &--info{  
    
     h2{
@@ -119,9 +165,9 @@
   }
  
   &--card{
-    display: flex;
-    flex-direction: column;
-    gap:16px;
+    // display: flex;
+    // flex-direction: column;
+    // gap:16px;
     padding:24px;
     margin-top: 24px;
     background: var(--color-blanco-1);
@@ -129,9 +175,18 @@
     box-shadow: 0px 4px 48px 0px rgba(95, 171, 221, 0.16);
 
 
-    .badge--image{
+    & .badge--image{
+      display: inline-block;
       border-radius: 40px;
-      background: var(--primary-extended-azul-100);
+      padding: 12px;
+      background: var(--state-info-100);
+     
+    }
+    & p:first-of-type{
+      margin: 16px 0 8px 0;
+      font-size: 18px;
+      line-height: 28px;
+      color: var(--color-azul-2);
     }
   }
 }
@@ -139,8 +194,22 @@
 .app{
   padding: 24px 0 64px 0;
   text-align: center;
-  &--mockup img{
-    width: 100%;
+
+  &--instrucciones{
+    display: none;
+  }
+  &--mockup {
+
+    img.img-mobil{
+      width: auto;
+    }
+    img.img-portrait{
+      display: none;
+    }
+    img.qr{
+      display:none;
+    }
+  
   }
 
   h2{
