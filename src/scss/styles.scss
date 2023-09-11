@@ -5,7 +5,7 @@
 
 $grid-breakpoints: (
     xs: 0,
-    md: 768px,
+    lg: 768px,
     xl: 1280px,
     xxl: 1440px,
 );
@@ -40,13 +40,13 @@ $grid-breakpoints: (
 @import "~bootstrap/scss/utilities";
 @import "~bootstrap/scss/utilities/api";
 
-
 @import "core/_vars";
 @import "core/_fonts";
 @import "core/_globals";
 
 @import "layout/_header";
 @import "layout/_footer";
+@import "layout/_promociones";
 
 @import "pages/_home";
 @import "pages/_home_portrait";

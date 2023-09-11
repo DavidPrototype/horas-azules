@@ -6,3 +6,5 @@ import "../scss/styles.scss";
  */
 /* COMPONENTES */
 import Button from "./components/button";
+import Tag from "./components/tag";
+import Card from "./components/cards";
