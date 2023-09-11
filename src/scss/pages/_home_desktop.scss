@@ -95,4 +95,77 @@
             }
         }
 
+        .efectivo{
+            padding: 96px 0 96px 96px;
+           .row:first-child{
+               display: grid;
+               grid-template-columns: repeat(2,1fr);
+               justify-items: center;
+               align-items: center;
+           }
+           .row{
+            justify-content: start;
+           
+           }
+            &--image{
+                
+                grid-column: 2/3;
+                .img-mobile{
+                  display: none;
+                }
+                
+                .img-portrait{
+                  display: none;
+                }
+                
+                .img-desktop{
+                  display: block;
+                }
+            }
+
+            &--info{
+                width: auto;
+                grid-column: 1/2; 
+                grid-row: 1/2;
+
+                h2{
+                    font-size: 47px;
+                    line-height: 51px;
+                }
+
+                p{
+                    padding-left:96px;
+                    font-size: 20px;
+                    line-height: 28px;
+                }
+
+                a{                   
+                   
+                    margin-left:90px;                   
+                }
+            }
+
+            &--card{
+                position: relative;
+                bottom: 70px;
+
+                & .badge--image{
+
+                    padding: 12px;
+                    width: 56px;
+                    height: 56px;
+                   
+                }
+                & p:first-of-type{
+                    font-size: 24px;
+                    line-height: 32px;                  
+                  }
+                & p:last-of-type{
+                   
+                    font-size: 20px;
+                    line-height: 28px;
+                }
+            }
+        }
+
 }
