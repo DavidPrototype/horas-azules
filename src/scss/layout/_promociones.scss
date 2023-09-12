@@ -16,6 +16,8 @@
 
 @media (min-width: 1280px) {
     .promociones-grid {
+        margin: auto;
+
         .swiper-wrapper {
             display: flex;
             flex-flow: row wrap;
@@ -25,7 +27,7 @@
 
             .swiper-slide {
                 width: auto;
-                flex: 0 1 434px;
+                flex: 0 1 432px;
 
                 &:first-child {
                     margin-top: 160px;
