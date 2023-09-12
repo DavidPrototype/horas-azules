@@ -1,75 +1,128 @@
-.footer{
+.footer {
     padding: 24px 0;
     background: var(--color-primario-azul-400);
     color: var(--color-blanco-1);
     font-family: var(--font-secundaria-regular);
 
-    .row{
-        padding-bottom:40px;
+    .row {
+        padding-bottom: 40px;
         margin-top: 32px;
         border-bottom: 1px solid var(--color-blanco-1);
     }
-    .desplegable{
-        font-size: 16px;
-        line-height: 24px;
+    .desplegable {
+        @include text-sm-14;
     }
 
-    h3{
-        margin:24px 0;
+    h3 {
+        margin: 24px 0;
         font-size: 16px;
         line-height: 24px;
     }
-    ul{
+    ul {
         padding: 0;
+        display: grid;
+        row-gap: 1rem;
+
+        li {
+            list-style: none;
+            @include text-sm-14;
+
+            a {
+                text-decoration: none;
+            }
+        }
     }
 
-    ul li{
-        list-style: none;
-        font-size: 14px;
-        line-height: 16px;
-        margin-bottom: 16px;
-    }
-    ul li:last-child{
-        margin-bottom: 0;
-    }
-    &--socials{
+    &--socials {
         display: flex;
-        gap:16px;
-
+        gap: 16px;
     }
-    &--sponsors{
-        margin:2rem 0;
+    &--sponsors {
+        margin: 2rem 0;
         display: flex;
         gap: 2rem;
         justify-content: center;
+
+        img {
+            max-height: 30px;
+        }
     }
 
-    &--legales{
+    &--legales {
         text-align: center;
-        p{
+        p {
             margin-bottom: 16px;
-            font-size: 12px;
-            line-height: 16px; 
+            @include text-xs-12;
+
+            a {
+                text-decoration: none;
+                position: relative;
+                display: contents;
+
+                &::before {
+                    content: "";
+                    width: 1px;
+                    height: 12px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin: 0 4px;
+                    background: var(--color-amarillo);
+                }
+            }
         }
 
-        .asociacion{
-            color:var(--color-amarillo);
-        }
-        .separador{
-            color:var(--color-amarillo-2);
+        .asociacion {
+            color: var(--color-amarillo);
         }
 
-        p:last-child{
+        p:last-child {
             margin-bottom: 0;
         }
     }
 }
+@include media-breakpoint-up(lg) {
+    .footer {
+        .row {
+            flex-flow: row wrap;
+        }
+        &--sponsors {
+            gap: 4rem;
+        }
+    }
+}
 
-@media (min-width:768px){
-    .footer{
+@include media-breakpoint-up(xl) {
+    .footer {
+        padding: 40px 0;
 
-        &--sponsors{
-            gap:4rem;
+        h3 {
+            margin: 48px auto 32px;
+        }
+
+        ul li {
+            @include text-sm-14;
+        }
+
+        &--desplegables {
+            row-gap: 2rem !important;
+        }
+
+        .desplegable {
+            @include text-sm-16;
+        }
+
+        &--sponsors {
+            margin: 48px auto;
+
+            img {
+                max-height: 39px;
+            }
+        }
+
+        &--legales {
+            p {
+                @include text-sm-14;
+            }
         }
     }
 }

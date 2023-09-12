@@ -1,8 +1,3 @@
-// Import all of Bootstrap's CSS
-/* @import "~bootstrap/scss/bootstrap"; */
-
-// Custom.scss
-
 $grid-breakpoints: (
     xs: 0,
     lg: 768px,
@@ -40,14 +35,17 @@ $grid-breakpoints: (
 @import "~bootstrap/scss/utilities";
 @import "~bootstrap/scss/utilities/api";
 
-@import "core/_vars";
-@import "core/_fonts";
-@import "core/_globals";
+@import "core/fonts";
+@import "core/vars";
+@import "core/mixins";
+@import "layout/body";
 
-@import "layout/_header";
+/* @import "core/_globals"; */
+
+/* @import "layout/_header";
 @import "layout/_footer";
-@import "layout/_promociones";
+@import "layout/_promociones"; */
 
-@import "pages/_home";
+/* @import "pages/_home";
 @import "pages/_home_portrait";
-@import "pages/_home_desktop";
+@import "pages/_home_desktop"; */

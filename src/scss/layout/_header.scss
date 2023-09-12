@@ -1,60 +1,65 @@
-.header{
+.header {
     .nav {
-       
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 24px;
-        &__logo{
-            padding: 1rem 1rem;
-            background: var( --color-primario-azul-400);
-            img{
+        &__logo {
+            padding: 1rem;
+            background: var(--color-primario-azul-400);
+
+            img {
                 width: 128px;
             }
-        }    
-        .menu{
-            
+        }
+
+        .menu {
             background: var(--color-blanco-1);
-            color:var(--color-azul-2);
-            list-style:none;
+            color: var(--color-azul-2);
+            list-style: none;
             padding: 0;
             margin-bottom: 0;
             display: flex;
-            
-            justify-content:flex-start;
-    
-            &__item{
-                // outline: 1px solid red;
-             
-               
+
+            &__item {
                 padding: 16px;
+                flex: 1 1 auto;
+                text-align: center;
+                @include text-sm-16;
+
+                a {
+                    text-decoration: none;
+                }
             }
-    
-            &__item--active{
-                border-bottom: 4px solid var( --color-azul-2);
+
+            &__item--active {
+                border-bottom: 4px solid var(--color-azul-2);
             }
         }
     }
 }
-@media (min-width:1024px){
-    .header{
-        .nav{
-            &__logo{   
-                padding-left: 64px;            
-                img{
-                    width:186.353px;
-                }
-            }   
-            .menu{
-                padding-left: 48px;
 
-                &__item{
-                 
+@include media-breakpoint-up(lg) {
+    .header {
+        .nav .menu__item {
+            flex: 0 1 auto;
+        }
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .header {
+        .nav {
+            &__logo {
+                padding-left: 3rem;
+
+                img {
+                    width: 186px;
+                }
+            }
+            .menu {
+                padding-left: 3rem;
+
+                &__item {
                     padding: 16px 24px;
                 }
             }
         }
     }
 }
-
-
-

@@ -1,7 +1,9 @@
+import "../../scss/components/cards.scss";
+
 export default class Card extends HTMLElement {
     constructor() {
         super();
-        this.attachShadow({ mode: "open" });
+        /* this.attachShadow({ mode: "open" }); */
     }
 
     connectedCallback() {
@@ -13,10 +15,7 @@ export default class Card extends HTMLElement {
         let imagenWebp = this.getAttribute("imagenWebp");
         let link = this.getAttribute("link");
 
-        this.shadowRoot.innerHTML = `
-        <style>
-          @import "../../scss/components/cards.scss";
-        </style>
+        this.innerHTML = `
         
          <div class="card card-promo">
             <custom-tag icon="${icono}" texto-tag=${texto}></custom-tag>
