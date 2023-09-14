@@ -27,27 +27,44 @@
                                 Disfruta de promociones<br />
                                 exclusivas para ti
                             </p>
-                            <picture class="hero--img">
-                                <img
-                                    class="w-100"
-                                    src="img/home/hero.png"
-                                    alt="Imagen Hero"
-                                />
-                                <img
-                                    class="tdc"
-                                    src="img/tdc.png"
-                                    alt="Imagen Tarjeta Credito Bancoppel"
-                                />
-                            </picture>
-                            <div class="hero--badge">
-                                <img
-                                    src="icons/monetizacion.svg"
-                                    alt="Icono Monetizacion"
-                                />
-                                <p class="strong-circular badge-title">
-                                    10% de bonificación
-                                </p>
-                            </div>
+                            <div class="img--container">
+                                    <picture class="hero--img">
+                                        <source
+                                        srcset="img/home/hero.webp"
+                                        type="image/webp"
+                                        />
+                                        <img
+                                            class="w-100"
+                                            srcset="img/home/hero.png"
+                                            alt="Imagen Hero"
+                                        />
+                                    </picture>
+                                    <picture class="hero--tdc">
+
+                                        <source
+                                        class="tdc"
+                                        srcset="img/tdc.webp"
+                                        alt="Imagen Tarjeta Credito Bancoppel"
+                                        type="image/webp"
+                                        />
+
+                                        <img
+                                            class="tdc"
+                                            srcset="img/tdc.png"
+                                            alt="Imagen Tarjeta Credito Bancoppel"
+                                        />
+                                    </picture>
+                                
+                                <div class="hero--badge">
+                                    <img
+                                        src="icons/monetizacion.svg"
+                                        alt="Icono Monetizacion"
+                                    />
+                                    <p class="strong-circular badge-title">
+                                        10% de bonificación
+                                    </p>
+                                </div>
+                            </div>                        
                         </div>
                     </div>
                     <div class="row">
@@ -149,7 +166,7 @@
             <section class="efectivo">
                 <div class="custom-container">
                     <div class="row">
-                        <div class="col-12 col-md-10 col-xl-6 efectivo--image">
+                        <div class="col-12 col-lg-10 col-xl-12 efectivo--image">
                             <img
                                 class="img-mobile"
                                 src="/img/home/efectivo.png"
@@ -162,11 +179,11 @@
                             />
                             <img
                                 class="img-desktop"
-                                src="/img/home/efectivo-desktop.png"
+                                src="/img/home/efectivo-desktop.jpeg"
                                 alt="Imagen Retiro de Efectivo"
                             />
                         </div>
-                        <div class="col-12 col-md-10 col-xl-6 efectivo--info">
+                        <div class="col-12 col-lg-10 col-xl-6 efectivo--info">
                             <h2 class="title-underline">
                                 ¿Quieres retirar efectivo?
                             </h2>
@@ -189,7 +206,7 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-12 col-md-10 efectivo--card">
+                        <div class="col-12 col-lg-10 col-xl-8 efectivo--card">
                             <picture class="badge--image">
                                 <img src="/icons/idea.svg" alt="Icono Idea" />
                             </picture>
@@ -208,26 +225,34 @@
             <section class="app">
                 <div class="custom-container">
                     <div class="row">
-                        <div class="col-12 col-md-10 col-xl-6 app--mockup">
-                            <picture>
-                                <img
-                                    class="img-mobil"
-                                    src="/img/app.png"
-                                    alt=""
-                                />
-                                <img
-                                    class="img-portrait"
-                                    src="/img/app-portrait.png"
-                                    alt=""
-                                />
-                                <img
-                                    class="qr"
-                                    src="/img/qr-image.png"
-                                    alt=""
-                                />
-                            </picture>
+                        <div class="col-12 col-lg-10 col-xl-12 app--mockup">
+                           <div class="img--container">
+
+                               <picture class="image">
+                                   <source
+                                       srcset="img/app.webp"
+                                       type="image/webp"
+                                   />
+                                   <img                                    
+                                       src="/img/app.png"
+                                       alt="magen App Bancoppel"
+                                   />
+                               </picture>
+                               <!-- <picture class="img-portrait">
+                                   <img                                    
+                                       src="/img/app-portrait.png"
+                                       alt=""
+                                   />
+                               </picture> -->
+                                <picture class="qr">
+                                    <img                                     
+                                        src="/img/qr-image.png"
+                                        alt=""
+                                    />
+                                </picture>
+                           </div>
                         </div>
-                        <div class="col-md-8 app--instrucciones">
+                        <div class="col-lg-8 app--instrucciones">
                             <picture>
                                 <img src="/icons/idea.svg" alt="" />
                             </picture>
@@ -236,7 +261,7 @@
                                 para descargar la App.
                             </p>
                         </div>
-                        <div class="col-12 col-md-10 app--info">
+                        <div class="col-12 col-lg-10 col-xl-6 app--info">
                             <h2 class="title-underline">
                                 Lleva el banco a todas partes con la App
                                 BanCoppel

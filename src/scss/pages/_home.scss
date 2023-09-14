@@ -18,18 +18,28 @@
             #1dacba 56.46%,
             #85c249 83.65%
         );
+        
+        div.img--container{
+            position: relative;
+        }
+       
     }
     &--img {
-        position: relative;
-        .tdc {
+        display: inline-block;
+        border-radius: 16px;
+        overflow: hidden;
+        width: 100%;
+       
+    }
+    &--tdc {
+        position: absolute;
+        left: 12px;
+        bottom: 57px;
+        img{
             width: 139px;
             height: 87px;
-            position: absolute;
-            left: 12px;
-            bottom: 16px;
         }
     }
-
     &--badge {
         display: flex;
         gap: 4px;
@@ -175,7 +185,7 @@
 
     &--image {
         img {
-            width: auto;
+            width: 100%;
         }
         .img-mobile {
             width: auto;
@@ -255,13 +265,20 @@
         display: none;
     }
     &--mockup {
-        img.img-mobil {
-            width: auto;
+        .image {           
+            display: inline-block;
+            border-radius:64px;
+            overflow: hidden;
+            height: 270px;
+
+            img{
+                width: 100%;
+            }
         }
-        img.img-portrait {
+       .img-portrait {
             display: none;
         }
-        img.qr {
+       .qr {
             display: none;
         }
     }
