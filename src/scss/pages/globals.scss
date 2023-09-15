@@ -43,18 +43,19 @@
     }
 
     .text-2xl {
-        font-size: 4.375rem;
-        line-height: 5.4688rem;
+        @include text-2xl-70;
+    }
+
+    .text-lg-36 {
+        @include text-lg-36;
     }
 
     .text-med {
-        font-size: 1.75rem;
-        line-height: 2.3275rem;
+        @include text-med-28;
     }
 
     .text-md-20 {
-        font-size: 1.25rem;
-        line-height: 1.75rem;
+        @include text-md-20;
     }
 
     .text-sm-16 {

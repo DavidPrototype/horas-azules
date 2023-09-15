@@ -40,6 +40,10 @@ $grid-breakpoints: (
 @import "core/mixins";
 @import "layout/body";
 
+@import "components/hero";
+@import "components/slider";
+@import "components/badge";
+
 /* @import "core/_globals"; */
 
 /* @import "layout/_header";

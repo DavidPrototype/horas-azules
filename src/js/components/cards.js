@@ -8,7 +8,7 @@ export default class Card extends HTMLElement {
 
     connectedCallback() {
         let icono = this.getAttribute("icon");
-        let texto = this.getAttribute("texto-tag");
+        let texto = this.getAttribute("texto-badge");
         let titulo = this.getAttribute("titulo");
         let descripcion = this.getAttribute("descripcion");
         let imagen = this.getAttribute("imagen");
@@ -18,7 +18,7 @@ export default class Card extends HTMLElement {
         this.innerHTML = `
         
          <div class="card card-promo">
-            <custom-tag icon="${icono}" texto-tag=${texto}></custom-tag>
+            <custom-badge icon="${icono}" texto-badge="${texto}"></custom-badge>
             <div class="card-promo__info">
                 <h5><strong>${titulo}</strong></h5>
                 <p>${descripcion}

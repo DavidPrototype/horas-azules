@@ -1,12 +1,9 @@
 .promociones-grid {
     overflow-y: initial;
-
     margin: 2.625rem auto;
 
     .swiper-slide {
-        /* width: 308px; */
-        width: 268px;
-        margin-bottom: 2rem;
+        width: 288px;
     }
 
     .swiper-pagination {
@@ -23,22 +20,23 @@
             flex-flow: row wrap;
             justify-content: flex-end;
             column-gap: 24px;
-            row-gap: 64px;
+            row-gap: 52px;
 
             .swiper-slide {
                 width: auto;
                 flex: 0 1 432px;
+                margin: 0;
 
                 &:first-child {
-                    margin-top: 160px;
+                    margin-top: 80px;
                 }
 
                 &:is(:nth-child(4n)) {
-                    margin-top: -160px;
+                    margin-top: -102px;
                 }
 
                 &:last-child:not(&:nth-child(2), &:nth-child(1)) {
-                    margin-top: -160px;
+                    margin-top: -102px;
                 }
             }
         }

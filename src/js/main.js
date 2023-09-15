@@ -11,5 +11,6 @@ import Footer from "./layout/footer";
 
 /* COMPONENTES */
 import Button from "./components/button";
-import Tag from "./components/tag";
+import Badge from "./components/badge";
 import Card from "./components/cards";
+import Hero from "./components/hero";

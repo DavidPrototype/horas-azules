@@ -12,63 +12,26 @@
         <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     </head>
     <body>
-        <custom-header></custom-header>
+        <custom-header nav-active="nav-inicio"></custom-header>
 
         <main>
-            <section class="hero">
+            <section class="section-hero">
                 <div class="custom-container">
                     <div class="row">
-                        <div class="col-12 hero--info">
-                            <h1 class="title-underline">
-                                Horas Azules <br />
-                                BanCoppel
-                            </h1>
-                            <p>
-                                Disfruta de promociones<br />
-                                exclusivas para ti
-                            </p>
-                            <div class="img--container">
-                                    <picture class="hero--img">
-                                        <source
-                                        srcset="img/home/hero.webp"
-                                        type="image/webp"
-                                        />
-                                        <img
-                                            class="w-100"
-                                            srcset="img/home/hero.png"
-                                            alt="Imagen Hero"
-                                        />
-                                    </picture>
-                                    <picture class="hero--tdc">
-
-                                        <source
-                                        class="tdc"
-                                        srcset="img/tdc.webp"
-                                        alt="Imagen Tarjeta Credito Bancoppel"
-                                        type="image/webp"
-                                        />
-
-                                        <img
-                                            class="tdc"
-                                            srcset="img/tdc.png"
-                                            alt="Imagen Tarjeta Credito Bancoppel"
-                                        />
-                                    </picture>
-                                
-                                <div class="hero--badge">
-                                    <img
-                                        src="icons/monetizacion.svg"
-                                        alt="Icono Monetizacion"
-                                    />
-                                    <p class="strong-circular badge-title">
-                                        10% de bonificación
-                                    </p>
-                                </div>
-                            </div>                        
-                        </div>
+                        <custom-hero 
+                            tipo="primario"
+                            titulo="Horas Azules <br /> BanCoppel" 
+                            subtitulo="Disfruta de promociones<br />exclusivas para ti"
+                            texto-boton="Botón"
+                            imagen="img/home/hero.png"
+                            imagen-webp="img/home/hero.png"
+                            imagen-tarjeta="img/tdc.png"
+                            imagen-tarjeta-webp="img/tdc.png"
+                            icon="icons/monetizacion.svg" texto-badge="10% de bonificación">
+                        </custom-hero>
                     </div>
                     <div class="row">
-                        <div class="col-12 col-xl-10 hero--bonificacion">
+                        <div class="col-12 col-xl-10 section-hero--bonificacion">
                             <div class="badge--image">
                                 <img
                                     src="icons/monetizacion.svg"
@@ -83,7 +46,7 @@
                             <p class="badge--info">
                                 Recibe
                                 <span
-                                    class="strong-circular hero--bonificacion--color"
+                                    class="strong-circular section-hero--bonificacion--color"
                                     >10% de bonificación</span
                                 >
                                 al estrenar tu
@@ -113,11 +76,11 @@
                                     <div class="swiper-slide">
                                         <custom-card
                                             icon="icons/icon-bussines.svg"
-                                            texto-tag="-10%"
+                                            texto-badge="-10%"
                                             titulo="Andrea"
                                             descripcion="Aprovecha que tienes un descuento exclusivo. ¡Estrena y consiéntete!"
-                                            imagen="img/home/Imagen-2.jpeg"
-                                            imagenWebp="img/home/Imagen-2.webp"
+                                            imagen="img/home/Imagen.jpeg"
+                                            imagenWebp="img/home/Imagen.webp"
                                             link="#!"
                                         >
                                         </custom-card>
@@ -125,33 +88,33 @@
                                     <div class="swiper-slide">
                                         <custom-card
                                             icon="icons/icon-bussines.svg"
-                                            texto-tag="-10%"
+                                            texto-badge="-10%"
                                             titulo="Farmacias VITAU"
                                             descripcion="Cuida tu salud al comprar con tu tarjeta."
-                                            imagen="img/home/Imagen-3.jpeg"
-                                            imagenWebp="img/home/Imagen-3.webp"
+                                            imagen="img/home/Imagen-2.jpeg"
+                                            imagenWebp="img/home/Imagen-2.webp"
                                             link="#!"
                                         ></custom-card>
                                     </div>
                                     <div class="swiper-slide">
                                         <custom-card
                                             icon="icons/icon-money.svg"
-                                            texto-tag="Cupón"
+                                            texto-badge="Cupón"
                                             titulo="Burger King"
                                             descripcion="Tu tarjeta también te da cupones, ¡Quítate el antojo y disfruta un combo!"
-                                            imagen="img/home/Imagen.jpeg"
-                                            imagenWebp="img/home/Imagen.webp"
+                                            imagen="img/home/Imagen-1.jpeg"
+                                            imagenWebp="img/home/Imagen-1.webp"
                                             link="#!"
                                         ></custom-card>
                                     </div>
                                     <div class="swiper-slide">
                                         <custom-card
                                             icon="icons/icon-bussines.svg"
-                                            texto-tag="-25%"
+                                            texto-badge="-25%"
                                             titulo="Benedetti´s"
                                             descripcion="Pizza y descuentos, el plan perfecto con tu tarjeta. "
-                                            imagen="img/home/Imagen-1.jpeg"
-                                            imagenWebp="img/home/Imagen-1.webp"
+                                            imagen="img/home/Imagen-3.jpeg"
+                                            imagenWebp="img/home/Imagen-3.webp"
                                             link="#!"
                                         ></custom-card>
                                     </div>
@@ -360,6 +323,6 @@
         <custom-footer></custom-footer>
       
         <script type="module" src="./js/main.js"></script>
-        <script type="module" src="./js/home.js"></script>
+        <script type="module" src="./js/layout/promociones.js"></script>
     </body>
 </html>

@@ -9,9 +9,9 @@ export default {
         outDir: path.resolve(__dirname, "dist"),
         rollupOptions: {
             input: {
-                index: path.resolve(__dirname, "src/index.html") /* 
-        interior: path.resolve(__dirname, 'src/interior.html'),
-        contacto: path.resolve(__dirname, 'src/contacto.html'), */,
+                index: path.resolve(__dirname, "src/index.html"),
+                /* miApp: path.resolve(__dirname, "src/mi-app.html"), */
+                /* contacto: path.resolve(__dirname, 'src/contacto.html'), */
             },
             output: {
                 chunkFileNames: "js/[name]-[hash].js",

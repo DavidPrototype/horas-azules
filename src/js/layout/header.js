@@ -4,6 +4,8 @@ export default class Header extends HTMLElement {
     }
 
     connectedCallback() {
+        let active = this.getAttribute("nav-active");
+
         this.innerHTML = `
         <header class="header">
             <nav class="nav">
@@ -17,14 +19,16 @@ export default class Header extends HTMLElement {
                 </div>
 
                 <ul class="menu font-secondary">
-                    <li class="menu__item menu__item--active"><a href="">Inicio</a></li>
-                    <li class="menu__item"><a href="">Mi tarjeta</a></li>
-                    <li class="menu__item"><a href="">Mi App</a></li>
-                    <li class="menu__item"><a href="">Ayuda</a></li>
+                    <li class="menu__item" id="nav-inicio"><a href="">Inicio</a></li>
+                    <li class="menu__item" id="nav-tarjeta"><a href="">Mi tarjeta</a></li>
+                    <li class="menu__item" id="nav-app"><a href="">Mi App</a></li>
+                    <li class="menu__item" id="nav-ayuda"><a href="">Ayuda</a></li>
                 </ul>
             </nav>
         </header>
         `;
+
+        document.getElementById(active).classList.add("menu__item--active");
     }
 }
 

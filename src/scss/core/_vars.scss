@@ -1,17 +1,23 @@
 :root {
-   
-   
-
-    --color-primario-azul-400: #145B97;
-    --color-azul-2:#006FB9;
-    --color-azul-3:#F1F4FA;
-    --state-info-100:#E4F7FF;
-    --color-blanco-1: #FFFFFF;
+    --color-primario-azul-400: #145b97;
+    --color-azul-2: #006fb9;
+    --color-azul-3: #f1f4fa;
+    --state-info-100: #e4f7ff;
+    --color-blanco-1: #ffffff;
     --color-gris-1: #1b1a16;
-    --color-gris-2:#EEEDED;
-    --color-gris-500:#595955;
-    --color-amarillo:#FFDD35;
-    --color-amarillo-2:#F2C94C;
+    --color-gris-2: #eeeded;
+    --color-gris-500: #595955;
+    --color-gris-600: #3b3a37;
+    --color-amarillo: #ffdd35;
+    --color-amarillo-2: #f2c94c;
+
+    --gradiente-primario: linear-gradient(
+        120deg,
+        #0d0b79 -3.87%,
+        #046ac0 32.52%,
+        #1dacba 56.46%,
+        #85c249 83.65%
+    );
 
     --font-primaria-regular: "Circular Std";
     --font-primaria-bold: "Circular Bold";
