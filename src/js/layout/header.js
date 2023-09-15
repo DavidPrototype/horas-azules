@@ -19,9 +19,9 @@ export default class Header extends HTMLElement {
                 </div>
 
                 <ul class="menu font-secondary">
-                    <li class="menu__item" id="nav-inicio"><a href="">Inicio</a></li>
-                    <li class="menu__item" id="nav-tarjeta"><a href="">Mi tarjeta</a></li>
-                    <li class="menu__item" id="nav-app"><a href="">Mi App</a></li>
+                    <li class="menu__item" id="nav-inicio"><a href="index.html">Inicio</a></li>
+                    <li class="menu__item" id="nav-tarjeta"><a href="mi-tarjeta.html">Mi tarjeta</a></li>
+                    <li class="menu__item" id="nav-app"><a href="mi-app.html">Mi App</a></li>
                     <li class="menu__item" id="nav-ayuda"><a href="">Ayuda</a></li>
                 </ul>
             </nav>

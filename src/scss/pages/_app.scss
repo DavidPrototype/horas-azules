@@ -1,0 +1,18 @@
+.main-app {
+    background: var(--color-azul-3);
+
+    .section-hero {
+        padding: 40px 0;
+        background: var(--color-blanco-1);
+        border: 0 0 16px;
+    }
+
+    .fechas {
+        padding: 64px 0;
+
+        h2 {
+            @include text-lg-32;
+            color: var(--color-azul-2);
+        }
+    }
+}
