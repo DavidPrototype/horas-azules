@@ -110,10 +110,11 @@
                 margin-left: 6rem;
             }
         }
-        &--card {
+        .alert--card {
             margin-top: 0;
+            width: 66%;
             position: relative;
-            bottom: 6rem;
+            bottom: 3rem;
         }
     }
     .app {
