@@ -44,13 +44,5 @@ $grid-breakpoints: (
 @import "components/slider";
 @import "components/badge";
 @import "components/cards";
-
-/* @import "core/_globals"; */
-
-/* @import "layout/_header";
-@import "layout/_footer";
-@import "layout/_promociones"; */
-
-/* @import "pages/_home";
-@import "pages/_home_portrait";
-@import "pages/_home_desktop"; */
+@import "components/alert";
+@import "components/accordion";

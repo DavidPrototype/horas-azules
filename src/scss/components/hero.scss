@@ -116,6 +116,10 @@
             margin-bottom: 0;
         }
     }
+
+    .hero-secundario {
+        padding: 0 !important;
+    }
 }
 
 @include media-breakpoint-up(xl) {
@@ -159,6 +163,13 @@
             .badge h6 {
                 @include text-md-24;
             }
+        }
+    }
+
+    .hero-secundario {
+        img {
+            /* aspect-ratio: 516/419; */
+            aspect-ratio: auto;
         }
     }
 }

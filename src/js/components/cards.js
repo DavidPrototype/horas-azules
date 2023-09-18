@@ -1,5 +1,3 @@
-import "../../scss/components/cards.scss";
-
 export default class Card extends HTMLElement {
     constructor() {
         super();
@@ -40,3 +38,33 @@ export default class Card extends HTMLElement {
 
 // Define your custom element
 window.customElements.define("custom-card", Card);
+
+export class CardIcon extends HTMLElement {
+    constructor() {
+        super();
+        /* this.attachShadow({ mode: "open" }); */
+    }
+
+    connectedCallback() {
+        let icono = this.getAttribute("icon");
+        let titulo = this.getAttribute("titulo");
+
+        this.innerHTML = `
+        
+        <div
+            class="card card-icon"
+        >
+            <picture>
+                <img
+                    src="${icono}"
+                    alt=""
+                />
+            </picture>
+            <h5><strong>${titulo}</strong></h5>
+        </div>
+    `;
+    }
+}
+
+// Define your custom element
+window.customElements.define("custom-card-icon", CardIcon);
