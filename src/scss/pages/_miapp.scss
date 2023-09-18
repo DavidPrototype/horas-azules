@@ -1,0 +1,205 @@
+.main-miapp{
+    background: var(--color-azul-3);
+
+
+    .app {
+        padding: 24px 0 64px 0;
+        text-align: center;
+    
+        &--instrucciones {
+            display: none;
+        }
+        &--mockup {
+            .image {
+                display: inline-block;
+                border-radius: 64px;
+                overflow: hidden;
+                height: 270px;
+    
+                img {
+                    width: 100%;
+                }
+            }
+            
+            .qr {
+                display: none;
+            }
+        }
+    
+        h2 {
+            margin: 32px 0 16px 0;
+            color: var(--color-azul-2);
+            font-size: 32px;
+            line-height: 40px;
+        }
+    
+        .title-underline {
+            place-items: center;
+        }
+    
+        p {
+            margin: 1rem 0;
+    
+            font-size: 18px;
+            line-height: 26px;
+        }
+    
+        a {
+            display: inline-block;
+            text-decoration: none;
+            padding: 12px 32px;
+            border-radius: 100px;
+            background: var(--color-azul-2);
+            color: var(--color-blanco-1);
+            font-size: 1rem;
+            line-height: 24px;
+            font-family: var(--font-secundaria-bold);
+        }
+    }
+
+}
+
+
+@media (min-width:768px){
+
+    .main-miapp{
+
+        .app {
+            padding: 4rem 0;
+            .title-underline {
+                place-items: start;
+                text-align: left;
+            }
+    
+            .row {
+                justify-content: center;
+            }
+    
+            &--instrucciones {
+                display: flex;
+                align-items: center;
+                padding: 24px;
+                gap: 16px;
+                border-radius: 24px;
+                background: var(--color-blanco-1);
+                box-shadow: 0px 4px 48px 0px rgba(95, 171, 221, 0.16);
+                position: relative;
+                bottom: 23px;
+    
+                picture {
+                    border-radius: 40px;
+                    background: var(--state-info-100);
+                    padding: 12px;
+                    width: 44px;
+                    height: 44px;
+                }
+    
+                p {
+                    text-align: left;
+                }
+    
+                &--mockup {
+                    .img--container {
+                        position: relative;
+                        bottom: 23px;
+    
+                        picture {
+                            border-radius: 40px;
+                            background: var(--state-info-100);
+                            padding: 12px;
+                            width: 44px;
+                            height: 44px;
+                        }
+    
+                        p {
+                            text-align: left;
+                            font-size: 16px;
+                            line-height: 24px;
+                            margin: 0;
+                        }
+                    }
+                    .image {
+                        height: 450px;
+    
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    .qr {
+                        display: block;
+                        position: absolute;
+                        right: -120px;
+                        top: 55px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1024px){
+    .main-miapp{
+        .app {
+            padding: 0;
+    
+            .custom-container {
+                margin: 0;
+            }
+    
+            .row {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 64px;
+                align-items: center;
+            }
+            &--instrucciones {
+                width: auto;
+                right: 235px;
+            }
+            &--mockup {
+                grid-column: 1/2;
+                grid-row: 1/3;
+                height: 100%;
+                .img--container {
+                    position: relative;
+                    left: -96px;
+                }
+                .image {
+                    height: 100%;
+    
+                    img {
+                        width: 100%;
+                    }
+                }
+               
+                .img-desktop {
+                    display: block;
+                }
+                .qr {
+                    width: 260px;
+                    top: 25px;
+                    right: -90px;
+                }
+            }
+    
+            &--info {
+                grid-column: 2/3;
+                grid-row: 1/2;
+                width: auto;
+    
+                h2 {
+                    font-size: 47px;
+                    line-height: 51px;
+                }
+                p {
+                    padding-left: 96px;
+                    font-size: 20px;
+                    line-height: 28px;
+                }
+                a {
+                    display: none;
+                }
+            }
+        }
+    }
+}

@@ -24,9 +24,9 @@
                             subtitulo="Disfruta de promociones<br />exclusivas para ti"
                             texto-boton="hide"
                             imagen="img/home/hero.png"
-                            imagen-webp="img/home/hero.png"
+                            imagen-webp="img/home/hero.webp"
                             imagen-tarjeta="img/tdc.png"
-                            imagen-tarjeta-webp="img/tdc.png"
+                            imagen-tarjeta-webp="img/tdc.webp"
                             icon="icons/monetizacion.svg" texto-badge="10% de bonificación">
                         </custom-hero>
                     </div>
@@ -130,21 +130,21 @@
                 <div class="custom-container">
                     <div class="row">
                         <div class="col-12 col-lg-10 col-xl-12 efectivo--image">
-                            <img
-                                class="img-mobile"
-                                src="/img/home/efectivo.png"
-                                alt="Imagen Retiro de Efectivo"
-                            />
-                            <img
-                                class="img-portrait"
-                                src="/img/home/efectivo-portrait.png"
-                                alt="Imagen Retiro de Efectivo"
-                            />
-                            <img
-                                class="img-desktop"
-                                src="/img/home/efectivo-desktop.jpeg"
-                                alt="Imagen Retiro de Efectivo"
-                            />
+                            <picture> 
+                                <source 
+                                    media="(min-width: 1024px)"
+                                    srcset="img/home/efectivo-desktop.jpeg"                                 
+                                 > 
+                                <source 
+                                    media="(min-width: 768px)"
+                                    srcset="img/home/efectivo-portrait.png"                                 
+                                 > 
+                                
+                                <img                                   
+                                    src="img/home/efectivo.png"
+                                    alt="Imagen Retiro de Efectivo"
+                                />
+                            </picture>
                         </div>
                         <div class="col-12 col-lg-10 col-xl-6 efectivo--info">
                             <h2 class="title-underline">
@@ -197,20 +197,16 @@
                                        type="image/webp"
                                    />
                                    <img                                    
-                                       src="/img/app.png"
+                                       srcset="/img/app.jpeg"
                                        alt="magen App Bancoppel"
                                    />
                                </picture>
-                               <!-- <picture class="img-portrait">
-                                   <img                                    
-                                       src="/img/app-portrait.png"
-                                       alt=""
-                                   />
-                               </picture> -->
+                              
                                 <picture class="qr">
                                     <img                                     
                                         src="/img/qr-image.png"
-                                        alt=""
+                                        width="224" height="224"
+                                        alt="imagen QR"
                                     />
                                 </picture>
                            </div>

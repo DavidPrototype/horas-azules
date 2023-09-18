@@ -18,83 +18,83 @@
         align-content: center;
     }
 
+    // .efectivo {
+    //     overflow: hidden;
+    //     .row {
+    //         justify-content: center;
+    //     }
+
+    //     &--image {
+    //         // .img-mobile {
+    //         //     display: none;
+    //         // }
+
+    //         .img-portrait {
+    //             display: block;
+    //         }
+    //     }
+
+    //     &--info {
+    //         a {
+    //             display: inline-block;
+    //             margin-left: 7.5rem;
+    //         }
+    //     }
+    //     &--card {
+    //         margin-top: 2rem;
+    //         display: grid;
+    //         gap: 16px;
+    //         row-gap: 0;
+    //         grid-template-columns: repeat(6, 1fr);
+
+    //         & .badge--image {
+    //             width: 44px;
+    //             height: 44px;
+    //             grid-row: 1/3;
+    //             justify-self: center;
+    //             align-self: start;
+    //         }
+    //         & p {
+    //             grid-column: 2/7;
+    //         }
+    //         & p:first-of-type {
+    //             margin-top: 0;
+    //         }
+    //         & p:last-of-type {
+    //             grid-row: 2/3;
+    //         }
+    //         div.img--container {
+    //             grid-row: 1/3;
+    //             grid-column: 2/3;
+    //         }
+    //         // picture{
+    //         //     grid-row: 1/3 ;
+    //         //     grid-column: 2/3;
+    //         // }
+    //     }
+
+    //     &--badge {
+    //         bottom: 8px;
+    //         grid-column: 2/3;
+    //         grid-row: 3/4;
+    //     }
+
+    //     &--bonificacion {
+    //         .badge--image {
+    //             display: none;
+    //         }
+    //         .badge--image2 {
+    //             display: block;
+    //             width: 67px;
+    //             height: 67px;
+    //         }
+    //     }
+    // }
+
+   
+
     .efectivo {
-        .row {
-            justify-content: center;
-        }
-
-        &--image {
-            .img-mobile {
-                display: none;
-            }
-
-            .img-portrait {
-                display: block;
-            }
-        }
-
-        &--info {
-            a {
-                display: inline-block;
-                margin-left: 7.5rem;
-            }
-        }
-        &--card {
-            margin-top: 2rem;
-            display: grid;
-            gap: 16px;
-            row-gap: 0;
-            grid-template-columns: repeat(6, 1fr);
-
-            & .badge--image {
-                width: 44px;
-                height: 44px;
-                grid-row: 1/3;
-                justify-self: center;
-                align-self: start;
-            }
-            & p {
-                grid-column: 2/7;
-            }
-            & p:first-of-type {
-                margin-top: 0;
-            }
-            & p:last-of-type {
-                grid-row: 2/3;
-            }
-            div.img--container {
-                grid-row: 1/3;
-                grid-column: 2/3;
-            }
-            // picture{
-            //     grid-row: 1/3 ;
-            //     grid-column: 2/3;
-            // }
-        }
-
-        &--badge {
-            bottom: 8px;
-            grid-column: 2/3;
-            grid-row: 3/4;
-        }
-
-        &--bonificacion {
-            .badge--image {
-                display: none;
-            }
-            .badge--image2 {
-                display: block;
-                width: 67px;
-                height: 67px;
-            }
-        }
-    }
-
-    .title-underline {
-        align-content: center;
-    }
-
-    .efectivo {
+        overflow: hidden;
         .row {
             justify-content: center;
         }
@@ -119,7 +119,7 @@
                 text-align: left;
             }
 
-            a {
+            a.boton {
                 display: inline-block;
                 // margin-left: 7.5rem;
             }
@@ -152,10 +152,10 @@
 
     .app {
         padding: 4rem 0;
-        .title-underline {
-            place-items: start;
-            text-align: left;
-        }
+        // .title-underline {
+        //     place-items: start;
+        //     text-align: left;
+        // }
 
         .row {
             justify-content: center;
@@ -164,60 +164,67 @@
         &--instrucciones {
             display: flex;
             align-items: center;
-            padding: 24px;
-            gap: 16px;
-            border-radius: 24px;
+            padding: 1.5rem;
+            gap: 1rem;
+            border-radius: 1.5rem;
             background: var(--color-blanco-1);
             box-shadow: 0px 4px 48px 0px rgba(95, 171, 221, 0.16);
             position: relative;
-            bottom: 23px;
+            bottom: 2.5rem;           
 
             picture {
-                border-radius: 40px;
+                border-radius: 2.5rem;
                 background: var(--state-info-100);
-                padding: 12px;
-                width: 44px;
-                height: 44px;
+                padding: 0.75rem;
+                width: 2.75rem;
+                height: 2.75rem;
             }
 
             p {
                 text-align: left;
+            }           
+        }
+
+        &--mockup {
+            .img--container {
+                position: relative;
+                             
             }
+            .image {
+                height:26.25rem;
 
-            &--mockup {
-                .img--container {
-                    position: relative;
-                    bottom: 23px;
-
-                    picture {
-                        border-radius: 40px;
-                        background: var(--state-info-100);
-                        padding: 12px;
-                        width: 44px;
-                        height: 44px;
-                    }
-
-                    p {
-                        text-align: left;
-                        font-size: 16px;
-                        line-height: 24px;
-                        margin: 0;
-                    }
-                }
-                .image {
-                    height: 450px;
-
-                    img {
-                        width: 100%;
-                    }
-                }
-                .qr {
-                    display: block;
-                    position: absolute;
-                    right: -120px;
-                    top: 55px;
+                img {
+                    width: 100%;
                 }
             }
+            .qr {
+                display: block;
+                position: absolute;
+                right: -60px;
+                top: 55px;
+                
+                img{
+                    width: 14rem;
+                    height: 14rem;
+                }
+                
+            }
+        }
+
+        &--info{
+            margin-top: 1.5rem;
+
+            h2 {  
+                text-align: left;
+            }
+            .title-underline {
+                place-items: start;
+            }
+            p{
+                margin: 1.5rem 0;  
+                text-align: left;
+            }
+            
         }
     }
 }
