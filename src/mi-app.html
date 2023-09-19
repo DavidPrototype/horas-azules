@@ -3,7 +3,8 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Horas Azules</title>
+        <meta name="robots" content="noindex">
+        <title>Horas Azules | Mi app</title>
         <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
@@ -15,9 +16,38 @@
         <custom-header nav-active="nav-app"></custom-header>
 
         <main class="main-miapp">
-            <section class="section-hero">             
+            <section class="section-hero">
+                <div class="custom-container">
+                    <div class="row">
+                        <custom-hero
+                            tipo="secundario"
+                            titulo="Horas Azules BanCoppel"
+                            subtitulo="¡Disfruta de todos los beneficios de la App BanCoppel!"
+                            texto-boton="hide"
+                            imagen="img/hero-secundario-app.png"
+                            imagen-webp="img/hero-secundario-app.webp"
+                        >
+                        </custom-hero>
+                    </div>
+                </div>             
             </section>
-            <section class="compras"></section>
+            <section class="compras">
+                <div class="custom-container">
+                    <div class="row">
+                        <div class="col-12 compras--info">
+                            <h2 class="title-underline">
+                                Compras seguras por internet
+                            </h2>
+                            <p>
+                                Genera tu Código de Seguridad Dinámico desde la App y compra sin preocupaciones:                                
+                            </p>
+                        </div>
+                        <div class="col-12 compras--carousel">
+
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section class="app">
                 <div class="custom-container">
                     <div class="row">
@@ -25,20 +55,21 @@
                            <div class="img--container">
 
                                <picture class="image">
-                                   <img
+                                   <source
                                        srcset="img/app.webp"
                                        type="image/webp"
                                    />
                                    <img                                    
-                                       src="/img/app.jpeg"
-                                       alt="Imagen App Bancoppel"
+                                       srcset="/img/app.jpeg"
+                                       alt="magen App Bancoppel"
                                    />
                                </picture>
                               
                                 <picture class="qr">
                                     <img                                     
                                         src="/img/qr-image.png"
-                                        alt="Imagen QR"
+                                        width="224" height="224"
+                                        alt="imagen QR"
                                     />
                                 </picture>
                            </div>
