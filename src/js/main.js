@@ -1,9 +1,7 @@
 // Import our custom CSS
 import "../scss/styles.scss";
 
-// Import all of Bootstrap's JS
-/* import * as bootstrap from "bootstrap";
- */
+import "bootstrap/js/dist/collapse";
 
 /* LAYOUT */
 import Header from "./layout/header";
@@ -14,3 +12,5 @@ import Button from "./components/button";
 import Badge from "./components/badge";
 import Card from "./components/cards";
 import Hero from "./components/hero";
+import Alert from "./components/alert";
+import Accordion from "./components/accordion";

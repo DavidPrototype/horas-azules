@@ -99,21 +99,22 @@
                 line-height: 3.187rem;
             }
             p {
-               
                 margin: 3rem 0 2.5rem 6rem;
                 font-size: 1.25rem;
-                line-height:1.75rem;
+                line-height: 1.75rem;
             }
-            a.boton{
+            /* a {
+                display: none;
+            } */
+            a.boton {
                 margin-left: 6rem;
             }
-           
-           
         }
-        &--card {
+        .alert--card {
             margin-top: 0;
+            width: 66%;
             position: relative;
-            bottom: 6rem;
+            bottom: 3rem;
         }
     }
     .app {
@@ -134,12 +135,12 @@
             padding: 1.5rem 2rem;
             right: 235px;
             gap: 1.5rem;
-            bottom: 6rem;   
+            bottom: 6rem;
 
             p {
-               font-size: 1.25rem;
-               line-height:1.75rem;
-            }    
+                font-size: 1.25rem;
+                line-height: 1.75rem;
+            }
         }
         &--mockup {
             grid-column: 1/2;
@@ -155,11 +156,11 @@
                 img {
                     width: 100%;
                 }
-            }  
-            .qr {               
+            }
+            .qr {
                 top: 25px;
                 right: -90px;
-                img{
+                img {
                     width: 16.25rem;
                     height: 16.25rem;
                 }
@@ -176,10 +177,10 @@
                 line-height: 51px;
             }
             p {
-                margin: 3rem 0;  
+                margin: 3rem 0;
                 padding-left: 6rem;
                 font-size: 1.25rem;
-                line-height:1.75rem;
+                line-height: 1.75rem;
             }
             a {
                 display: none;

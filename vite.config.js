@@ -1,3 +1,5 @@
+import ViteWebp from "vite-plugin-webp-generator";
+
 const path = require("path");
 
 export default {
@@ -42,4 +44,11 @@ export default {
         port: 8080,
         hot: true,
     },
+    plugins: [
+        ViteWebp({
+            extensions: ["png", "jpg", "jpeg"],
+        }),
+
+        ,
+    ],
 };

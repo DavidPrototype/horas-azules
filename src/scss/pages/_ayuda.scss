@@ -1,0 +1,24 @@
+.main-ayuda {
+    .faqs {
+        padding: 40px 0;
+
+        .row {
+            row-gap: 24px;
+        }
+
+        &--header {
+            row-gap: 16px;
+            display: grid;
+
+            p {
+                @include text-md-20;
+            }
+        }
+
+        .title-underline {
+            color: var(--color-azul-2);
+            margin-top: 8px;
+            @include text-lg-32;
+        }
+    }
+}
