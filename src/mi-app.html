@@ -1,109 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="robots" content="noindex">
-        <title>Horas Azules | Mi app</title>
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-        />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Horas Azules | Mi app</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
 
-        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    </head>
-    <body>
-        <custom-header nav-active="nav-app"></custom-header>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <custom-header nav-active="nav-app"></custom-header>
 
-        <main class="main-miapp">
-            <section class="section-hero">
-                <div class="custom-container">
-                    <div class="row">
-                        <custom-hero
-                            tipo="secundario"
-                            titulo="Horas Azules BanCoppel"
-                            subtitulo="¡Disfruta de todos los beneficios de la App BanCoppel!"
-                            texto-boton="hide"
-                            imagen="img/hero-secundario-app.png"
-                            imagen-webp="img/hero-secundario-app.webp"
-                        >
-                        </custom-hero>
+    <main class="main-miapp">
+      <section class="section-hero">
+        <div class="custom-container">
+          <div class="row">
+            <custom-hero
+              tipo="secundario"
+              titulo="Horas Azules BanCoppel"
+              subtitulo="¡Disfruta de todos los beneficios de la App BanCoppel!"
+              texto-boton="hide"
+              imagen="img/hero-secundario-app.png"
+              imagen-webp="img/hero-secundario-app.webp"
+            >
+            </custom-hero>
+          </div>
+        </div>
+      </section>
+      <section class="compras">
+        <div class="custom-container">
+          <div class="row">
+            <div class="col-12 compras--info">
+              <h2 class="title-underline">Compras seguras por internet</h2>
+              <p>
+                Genera tu Código de Seguridad Dinámico desde la App y compra sin
+                preocupaciones:
+              </p>
+            </div>            
+          </div>
+          <div class="row compras--carousel swiper" id="swiper-pasos">
+            <div class="swiper-wrapper">
+                <div class="col col-lg-6 col-xl-4 swiper-slide">
+                  <div class="paso">
+                    <div class="paso--imagen">
+                      <img
+                        src="/img/paso1-app.png"
+                        alt="Imagen App Bancoppel Paso 1"
+                      />
                     </div>
-                </div>             
-            </section>
-            <section class="compras">
-                <div class="custom-container">
-                    <div class="row">
-                        <div class="col-12 compras--info">
-                            <h2 class="title-underline">
-                                Compras seguras por internet
-                            </h2>
-                            <p>
-                                Genera tu Código de Seguridad Dinámico desde la App y compra sin preocupaciones:                                
-                            </p>
-                        </div>
-                        <div class="col-12 compras--carousel">
-
-                        </div>
+                    <div class="paso--details">
+                      <div class="contador">
+                        <p>1</p>
+                      </div>
+                      <p class="instruccion">Ingresa a la App BanCoppel</p>
                     </div>
+                  </div>
                 </div>
-            </section>
-            <section class="app">
-                <div class="custom-container">
-                    <div class="row">
-                        <div class="col-12 col-lg-10 col-xl-12 app--mockup">
-                           <div class="img--container">
-
-                               <picture class="image">
-                                   <source
-                                       srcset="img/app.webp"
-                                       type="image/webp"
-                                   />
-                                   <img                                    
-                                       srcset="/img/app.jpeg"
-                                       alt="magen App Bancoppel"
-                                   />
-                               </picture>
-                              
-                                <picture class="qr">
-                                    <img                                     
-                                        src="/img/qr-image.png"
-                                        width="224" height="224"
-                                        alt="imagen QR"
-                                    />
-                                </picture>
-                           </div>
-                        </div>
-                        <div class="col-lg-8 app--instrucciones">
-                            <picture>
-                                <img src="/icons/idea.svg" alt="" />
-                            </picture>
-                            <p>
-                                Pon la cámara de tu celular frente al código QR
-                                para descargar la App.
-                            </p>
-                        </div>
-                        <div class="col-12 col-lg-10 col-xl-6 app--info">
-                            <h2 class="title-underline">
-                                Lleva el banco a todas partes con la App
-                                BanCoppel
-                            </h2>
-                            <p>
-                                Acude a cualquier Sucursal para firmar el
-                                Contrato de Servicios Digitales, antes de usar
-                                la Banca Electrónica.
-                            </p>
-                            <a href="#">Descargar</a>
-                        </div>
+                <div class="col col-lg-6 col-xl-4 swiper-slide">
+                  <div class="paso">
+                    <div class="paso--imagen">
+                      <img
+                        src="/img/paso2-app.png"
+                        alt="Imagen App Bancoppel Paso 1"
+                      />
                     </div>
+                    <div class="paso--details">
+                      <div class="contador">
+                        <p>2</p>
+                      </div>
+                      <p class="instruccion">Seleccion <span>Compras por internet</span></p>
+                    </div>
+                  </div>
                 </div>
-            </section>
+                <div class="col col-lg-6 col-xl-4 swiper-slide">
+                  <div class="paso">
+                    <div class="paso--imagen">
+                      <img
+                        src="/img/paso3-app.png"
+                        alt="Imagen App Bancoppel Paso 1"
+                      />
+                    </div>
+                    <div class="paso--details">
+                      <div class="contador">
+                        <p>3</p>
+                      </div>
+                      <p class="instruccion">Elije con cuál tarjeta comprar</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col col-lg-6 col-xl-4 swiper-slide">
+                  <div class="paso">
+                    <div class="paso--imagen">
+                      <img
+                        src="/img/paso4-app.png"
+                        alt="Imagen App Bancoppel Paso 1"
+                      />
+                    </div>
+                    <div class="paso--details">
+                      <div class="contador">
+                        <p>4</p>
+                      </div>
+                      <p class="instruccion">Presiona <span>Generar Código de Seguridad</span> para verlo en la imagen de la tarjeta </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col col-lg-6 col-xl-4 swiper-slide">
+                  <div class="paso">
+                    <div class="paso--imagen">
+                      <img
+                        src="/img/paso5-app.png"
+                        alt="Imagen App Bancoppel Paso 1"
+                      />
+                    </div>
+                    <div class="paso--details">
+                      <div class="contador">
+                        <p>5</p>
+                      </div>
+                      <p class="instruccion">¡Listo! tienes 5 minutos para usarlo antes de que expire</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+      <section class="app">
+        <div class="custom-container">
+          <div class="row">
+            <div class="col-12 col-lg-10 col-xl-12 app--mockup">
+              <div class="img--container">
+                <picture class="image">
+                  <source srcset="img/app.webp" type="image/webp" />
+                  <img srcset="/img/app.jpeg" alt="magen App Bancoppel" />
+                </picture>
 
-        </main>
+                <picture class="qr">
+                  <img
+                    src="/img/qr-image.png"
+                    width="224"
+                    height="224"
+                    alt="imagen QR"
+                  />
+                </picture>
+              </div>
+            </div>
+            <div class="col-lg-8 app--instrucciones">
+              <picture>
+                <img src="/icons/idea.svg" alt="" />
+              </picture>
+              <p>
+                Pon la cámara de tu celular frente al código QR para descargar
+                la App.
+              </p>
+            </div>
+            <div class="col-12 col-lg-10 col-xl-6 app--info">
+              <h2 class="title-underline">
+                Lleva el banco a todas partes con la App BanCoppel
+              </h2>
+              <p>
+                Acude a cualquier Sucursal para firmar el Contrato de Servicios
+                Digitales, antes de usar la Banca Electrónica.
+              </p>
+              <a href="#">Descargar</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-        <custom-footer></custom-footer>
-      
-        <script type="module" src="./js/main.js"></script>
-       
-    </body>
+    <custom-footer></custom-footer>
+
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/mi-app.js"></script>
+  </body>
 </html>
