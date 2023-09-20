@@ -1,5 +1,3 @@
-import ViteWebp from "vite-plugin-webp-generator";
-
 const path = require("path");
 
 export default {
@@ -13,6 +11,7 @@ export default {
             input: {
                 index: path.resolve(__dirname, "src/index.html"),
                 miTarjeta: path.resolve(__dirname, "src/mi-tarjeta.html"),
+                miApp: path.resolve(__dirname, "src/mi-app.html"),
 
                 preguntasFrecuentes: path.resolve(
                     __dirname,
@@ -61,11 +60,4 @@ export default {
         port: 8080,
         hot: true,
     },
-    plugins: [
-        ViteWebp({
-            extensions: ["png", "jpg", "jpeg"],
-        }),
-
-        ,
-    ],
 };

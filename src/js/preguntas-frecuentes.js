@@ -1,20 +1,3 @@
-const enableSwiper = () => {
-    new Swiper(".swiper", {
-        // spaceBetween: 24,
-        slidesPerView: "auto",
-        direction: "horizontal",
-        pagination: {
-            el: ".swiper-pagination",
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-    });
-};
-
-enableSwiper();
-
 /* ANIMACIONES */
 
 gsap.registerPlugin(ScrollTrigger);
@@ -44,6 +27,4 @@ const reveal = (elemento, trigger) => {
     });
 };
 
-reveal(".section-hero > *", ".section-hero");
-reveal(".compras > *", ".compras");
-reveal(".app > *", ".app");
+reveal(".faqs > *", ".faqs");
