@@ -2,8 +2,22 @@
     overflow-y: initial;
     margin: 2.625rem auto;
 
+    .swiper-wrapper {
+        align-items: stretch;
+    }
     .swiper-slide {
         width: 288px;
+        /* display: flex;
+
+        custom-card {
+            display: flex;
+            align-items: stretch;
+
+            a {
+                display: flex;
+                align-items: stretch;
+            }
+        } */
     }
 
     .swiper-pagination {

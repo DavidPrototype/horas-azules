@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
+        <meta name="robots" content="noindex">
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="noindex">
@@ -11,6 +12,10 @@
         />
 
         <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
     </head>
     <body>
         <custom-header nav-active="nav-inicio"></custom-header>
@@ -66,23 +71,23 @@
             <section class="promociones">
                 <div class="custom-container">
                     <div class="row">
-                        <div class="col-12">
+                        <div class="col-12 col-lg-6 col-xl-5">
                             <h2 class="title-underline promociones--info">
-                                Estrena tu tarjeta con<br />
-                                nuestras promociones
+                                Estrena tu tarjeta con nuestras promociones
                             </h2>
                         </div>
                             <div class="swiper promociones-grid col-xl-10">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <custom-card
+                                            link="promocion-andrea.html"
                                             icon="icons/icon-bussines.svg"
                                             texto-badge="-10%"
                                             titulo="Andrea"
                                             descripcion="Aprovecha que tienes un descuento exclusivo. ¡Estrena y consiéntete!"
                                             imagen="img/home/Imagen.jpeg"
                                             imagenWebp="img/home/Imagen.webp"
-                                            link="#!"
+                                            
                                         >
                                         </custom-card>
                                     </div>
@@ -94,7 +99,7 @@
                                             descripcion="Cuida tu salud al comprar con tu tarjeta."
                                             imagen="img/home/Imagen-2.jpeg"
                                             imagenWebp="img/home/Imagen-2.webp"
-                                            link="#!"
+                                            link="promocion-vitau.html"
                                         ></custom-card>
                                     </div>
                                     <div class="swiper-slide">
@@ -105,7 +110,7 @@
                                             descripcion="Tu tarjeta también te da cupones, ¡Quítate el antojo y disfruta un combo!"
                                             imagen="img/home/Imagen-1.jpeg"
                                             imagenWebp="img/home/Imagen-1.webp"
-                                            link="#!"
+                                            link="promocion-burguer-king.html"
                                         ></custom-card>
                                     </div>
                                     <div class="swiper-slide">
@@ -116,7 +121,7 @@
                                             descripcion="Pizza y descuentos, el plan perfecto con tu tarjeta. "
                                             imagen="img/home/Imagen-3.jpeg"
                                             imagenWebp="img/home/Imagen-3.webp"
-                                            link="#!"
+                                            link="promocion-benedettis.html"
                                         ></custom-card>
                                     </div>
                                 </div>
@@ -163,9 +168,9 @@
                                 sobre el monto que retires en Cajeros
                                 Automáticos o tu Sucursal BanCoppel.
                             </p>
-                            <a class="boton strong-helvetica" href=""
-                                >Ubica la más cercana</a
-                            >
+                            
+                            <custom-boton tipo="secundario" texto="Ubica la más cercana" data-bs-toggle="modal"
+                                        data-bs-target="#modal-salida-ubicacion"></custom-boton>
                         </div>
                     </div>
 
@@ -180,56 +185,7 @@
                     </div>
                 </div>
             </section>
-            <section class="app">
-                <div class="custom-container">
-                    <div class="row">
-                        <div class="col-12 col-lg-10 col-xl-12 app--mockup">
-                           <div class="img--container">
-
-                               <picture class="image">
-                                   <source
-                                       srcset="img/app.webp"
-                                       type="image/webp"
-                                   />
-                                   <img                                    
-                                       srcset="/img/app.jpeg"
-                                       alt="magen App Bancoppel"
-                                   />
-                               </picture>
-                              
-                                <picture class="qr">
-                                    <img                                     
-                                        src="/img/qr-image.png"
-                                        width="224" height="224"
-                                        alt="imagen QR"
-                                    />
-                                </picture>
-                           </div>
-                        </div>
-                        <div class="col-lg-8 app--instrucciones">
-                            <picture>
-                                <img src="/icons/idea.svg" alt="" />
-                            </picture>
-                            <p>
-                                Pon la cámara de tu celular frente al código QR
-                                para descargar la App.
-                            </p>
-                        </div>
-                        <div class="col-12 col-lg-10 col-xl-6 app--info">
-                            <h2 class="title-underline">
-                                Lleva el banco a todas partes con la App
-                                BanCoppel
-                            </h2>
-                            <p>
-                                Acude a cualquier Sucursal para firmar el
-                                Contrato de Servicios Digitales, antes de usar
-                                la Banca Electrónica.
-                            </p>
-                            <a href="#">Descargar</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <app-bancoppel></app-bancoppel>
             <section class="terminos">
                 <div class="custom-container">
                     <div class="row">
@@ -312,8 +268,12 @@
         </main>
        
         <custom-footer></custom-footer>
+
+        <modal-salida id-modal="modal-salida-ubicacion" link-btn-salida="https://www.bancoppel.com/geolocalizacion/index.html"></modal-salida>
       
         <script type="module" src="./js/main.js"></script>
+        <script type="module" src="./js/home.js"></script>
         <script type="module" src="./js/layout/promociones.js"></script>
+        
     </body>
 </html>

@@ -1,7 +1,13 @@
 .header {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    box-shadow: var(--shadow-blue);
+
     .nav {
+        background: var(--color-blanco-1);
         &__logo {
-            padding: 1rem;
+            padding: 1rem 0;
             background: var(--color-primario-azul-400);
 
             img {
@@ -9,8 +15,12 @@
             }
         }
 
-        .menu {
+        &--menu {
             background: var(--color-blanco-1);
+            padding: 0;
+        }
+
+        .menu {
             color: var(--color-azul-2);
             list-style: none;
             padding: 0;
@@ -37,8 +47,15 @@
 
 @include media-breakpoint-up(lg) {
     .header {
-        .nav .menu__item {
-            flex: 0 1 auto;
+        .nav {
+            &--menu {
+                padding-right: calc(var(--bs-gutter-x) * 0.5);
+                padding-left: calc(var(--bs-gutter-x) * 0.5);
+            }
+
+            .menu__item {
+                flex: 0 1 auto;
+            }
         }
     }
 }
@@ -47,15 +64,11 @@
     .header {
         .nav {
             &__logo {
-                padding-left: 3rem;
-
                 img {
                     width: 186px;
                 }
             }
             .menu {
-                padding-left: 3rem;
-
                 &__item {
                     padding: 16px 24px;
                 }

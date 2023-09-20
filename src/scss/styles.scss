@@ -34,6 +34,7 @@ $grid-breakpoints: (
 @import "~bootstrap/scss/transitions";
 @import "~bootstrap/scss/utilities";
 @import "~bootstrap/scss/utilities/api";
+@import "~bootstrap/scss/modal";
 
 @import "core/fonts";
 @import "core/vars";
@@ -46,3 +47,4 @@ $grid-breakpoints: (
 @import "components/cards";
 @import "components/alert";
 @import "components/accordion";
+@import "components/modals";

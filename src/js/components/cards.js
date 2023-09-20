@@ -14,24 +14,24 @@ export default class Card extends HTMLElement {
         let link = this.getAttribute("link");
 
         this.innerHTML = `
-        
-         <div class="card card-promo">
-            <custom-badge icon="${icono}" texto-badge="${texto}"></custom-badge>
-            <div class="card-promo__info">
-                <h5><strong>${titulo}</strong></h5>
-                <p>${descripcion}
-                </p>
-                <a href="${link}" target="_blank">
-                    <strong>Ver más</strong>
-                </a>
-            </div>
-            <div class="card-promo__image">
-                <picture>
-                    <source srcset="${imagenWebp}" type="image/webp">
-                    <img src="${imagen}" alt="" />
-                </picture>
-            </div>
-        </div>
+            <a href="${link}" class="text-decoration-none">
+                <div class="card card-promo">
+                    <custom-badge icon="${icono}" texto-badge="${texto}"></custom-badge>
+                    <div class="card-promo__info">
+                        <h5><strong>${titulo}</strong></h5>
+                        <p>${descripcion}
+                        </p>
+                        <h6 class="link"><strong>Ver más</strong></h6>
+                        
+                    </div>
+                    <div class="card-promo__image">
+                        <picture>
+                            <source srcset="${imagenWebp}" type="image/webp">
+                            <img src="${imagen}" alt="" />
+                        </picture>
+                    </div>
+                </div>
+            </a>
     `;
     }
 }
