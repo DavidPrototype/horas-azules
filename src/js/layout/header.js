@@ -22,7 +22,7 @@ export default class Header extends HTMLElement {
                     <li class="menu__item" id="nav-inicio"><a href="index.html">Inicio</a></li>
                     <li class="menu__item" id="nav-tarjeta"><a href="mi-tarjeta.html">Mi tarjeta</a></li>
                     <li class="menu__item" id="nav-app"><a href="mi-app.html">Mi App</a></li>
-                    <li class="menu__item" id="nav-ayuda"><a href="">Ayuda</a></li>
+                    <li class="menu__item" id="nav-ayuda"><a href="ayuda.html">Ayuda</a></li>
                 </ul>
             </nav>
         </header>
