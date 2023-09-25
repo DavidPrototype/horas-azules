@@ -36,6 +36,18 @@
                 a {
                     text-decoration: none;
                 }
+
+                @media (hover: hover) {
+                    transition: 0.3s ease-in-out all;
+                    &:hover {
+                        background: var(--color-blanco-2);
+                    }
+                }
+
+                &:active {
+                    background: var(--color-azul-2);
+                    color: var(--color-blanco-1);
+                }
             }
 
             &__item--active {

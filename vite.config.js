@@ -1,4 +1,5 @@
 const path = require("path");
+import htmlPurge from "vite-plugin-purgecss";
 
 export default {
     root: path.resolve(__dirname, "src"),
@@ -60,4 +61,5 @@ export default {
         port: 8080,
         hot: true,
     },
+    plugins: [htmlPurge({})],
 };

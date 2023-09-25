@@ -41,9 +41,10 @@ export default class ModalSalida extends HTMLElement {
                             target="_blank"
                             rel="noopener noreferrer"
                             id="${idBtn}"
+                            class="link-btn"
                         >
                             <custom-boton
-                                tipo="secundario"
+                                tipo="secundario-icon"
                                 texto="Continuar"
                             ></custom-boton
                         ></a>

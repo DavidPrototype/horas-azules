@@ -118,6 +118,12 @@
     }
 
     &--image {
+        picture {
+            display: block;
+            border-radius: 40px;
+            overflow: hidden;
+        }
+
         img {
             width: 100%;
         }

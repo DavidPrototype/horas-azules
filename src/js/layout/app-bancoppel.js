@@ -43,7 +43,7 @@ export default class AppBanCoppel extends HTMLElement {
                         <div class="col-12 col-lg-10 col-xl-6 app--info">
                             <h2 class="title-underline">
                                 Lleva el banco a todas partes con la App
-                                BanCoppel
+                                BanCoppel*
                             </h2>
                             <p>
                                 Acude a cualquier Sucursal para firmar el

@@ -239,7 +239,7 @@
                         <div class="col-12 col-lg-10 col-xl-6 app--info">
                             <h2 class="title-underline">
                                 Lleva el banco a todas partes con la App
-                                BanCoppel
+                                BanCoppel*
                             </h2>
                             <p>
                                 Acude a cualquier Sucursal para firmar el
@@ -252,7 +252,7 @@
                 </div>
             </section>
         `}}window.customElements.define("app-bancoppel",Dt);class St extends HTMLElement{constructor(){super()}connectedCallback(){let _=this.getAttribute("data-id"),e=this.getAttribute("texto"),n=this.getAttribute("tipo");this.innerHTML=`
-              <button class="${n}" id='${_}'>${e}</buton>`}attributeChangesCallback(_,e,n){}}window.customElements.define("custom-boton",St);class Lt extends HTMLElement{constructor(){super()}connectedCallback(){let _=this.getAttribute("icon"),e=this.getAttribute("texto-badge");this.innerHTML=`
+              <button class="btn ${n}" id='${_}'>${e}</buton>`}attributeChangesCallback(_,e,n){}}window.customElements.define("custom-boton",St);class Lt extends HTMLElement{constructor(){super()}connectedCallback(){let _=this.getAttribute("icon"),e=this.getAttribute("texto-badge");this.innerHTML=`
           <div class="badge">
             <img src="${_}">
             <h6>${e}</h6>
@@ -384,9 +384,10 @@
                             target="_blank"
                             rel="noopener noreferrer"
                             id="${e}"
+                            class="link-btn"
                         >
                             <custom-boton
-                                tipo="secundario"
+                                tipo="secundario-icon"
                                 texto="Continuar"
                             ></custom-boton
                         ></a>

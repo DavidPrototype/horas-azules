@@ -1,6 +1,7 @@
 .app {
     padding: 1.5rem 0 4rem 0;
     text-align: center;
+    background: var(--color-blanco-1);
 
     &--instrucciones {
         display: none;
@@ -171,6 +172,8 @@
             grid-column: 2/3;
             grid-row: 1/2;
             width: auto;
+            padding-top: 6rem;
+            margin-top: 0;
 
             h2 {
                 font-size: 47px;
