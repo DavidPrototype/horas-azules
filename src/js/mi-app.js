@@ -18,6 +18,14 @@ const enableSwiper = new Swiper(".swiper", {
             slidesPerView: 3,
             slidesPerGroup:3,
             spaceBetween: 32
+            },
+            1920: {
+                // grid: {
+                //     cols: 2,
+                //   },
+            slidesPerView: 3,
+            slidesPerGroup:3,
+            spaceBetween: 192
             }
         },
         direction: "horizontal",
