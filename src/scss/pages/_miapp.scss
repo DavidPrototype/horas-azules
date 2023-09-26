@@ -112,7 +112,17 @@
         }
 
     }
-
+    .terminos-app{
+        background: var(--color-blanco-1);
+       
+        &--info{
+            padding:  4rem 1.5rem;
+            p{
+                @include text-sm-18;               
+                font-family: var(--font-primaria-regular);
+            }
+        }
+    }
 }
 
 @include media-breakpoint-up(lg) {
@@ -227,6 +237,19 @@
                    font-size: 20px !important;
                    line-height: 28px !important;                
                 }
+            }
+        }
+    }
+
+    .terminos-app{
+       
+       
+        &--info{
+            padding:  6rem;
+            p{
+                font-size: 1.25rem !important;
+                line-height: 1.75rem !important;            
+               
             }
         }
     }

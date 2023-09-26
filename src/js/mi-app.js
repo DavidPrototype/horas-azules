@@ -36,13 +36,16 @@ const enableSwiper = new Swiper(".swiper", {
 
 /*METRICAS */
 
-swiper.on("navigationNext", function () {
-    metrica6A( 'Siguiente');     
-});
+    enableSwiper.on("navigationNext", function () {
+        metrica6A( 'Siguiente');     
+    });
+    
+    enableSwiper.on("navigationPrev", function () {
+        metrica6A( 'Regresar');    
+    });
+ 
+   
 
-swiper.on("navigationPrev", function () {
-    metrica6A( 'Regresar');    
-});
 
 /* ANIMACIONES */
 

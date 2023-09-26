@@ -46,6 +46,16 @@
             width: 100%;
         }
     }
+
+    &--terminos{
+        margin-top: 4rem;
+        p{
+            @include text-sm-18;
+            font-family: var(--font-primaria-regular);
+        }
+    }
+
+
 }
 
 @include media-breakpoint-up(lg) {

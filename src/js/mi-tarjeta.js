@@ -69,7 +69,7 @@ let opSeleccionada;
 }
 
 function metricaCarouselSeleccion( seleccion){
-  console.log(seleccion)
+//   console.log(seleccion)
     if(seleccion =='card-fecha-1'){       
         metrica5B();
     }else if(seleccion =='card-fecha-2'){       

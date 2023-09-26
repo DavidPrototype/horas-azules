@@ -195,13 +195,17 @@
     p {
         margin-bottom: 26px;
     }
+    p.app-terminos{
+        @include text-sm-18;
+        font-family: var(--font-primaria-regular);
+    }
     p:last-child {
         margin-bottom: 0;
     }
     p span.campania {
         color: var(--color-azul-2);
     }
-    p:first-child {
+    p.condiciones {
         font-size: 18px;
         line-height: 28px;
     }

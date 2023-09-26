@@ -63,6 +63,8 @@ export default class AppBanCoppel extends HTMLElement {
                             <a href="https://bancoppe.onelink.me/UapG/c2757ivk" target="_blank"><custom-boton tipo="primario" texto="Descargar"></custom-boton></a>
                         </div>
                     </div>
+
+                    
                 </div>
             </section>
         `;
