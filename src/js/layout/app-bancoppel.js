@@ -12,19 +12,29 @@ export default class AppBanCoppel extends HTMLElement {
                            <div class="img--container">
 
                                <picture class="image">
-                                   <source
+                              
+                                   <source                                      
                                        srcset="img/app.webp"
+                                       media="(min-width: 1024px)"
                                        type="image/webp"
                                    />
-                                   <img                                    
+                                   <source                                      
+                                       srcset=" img/app-portrait.webp"
+                                       media="(min-width: 768px)"
+                                       type="image/webp"
+                                   />
+                                   
+                                   <img                                                                           
                                        srcset="/img/app.jpeg"
                                        alt="magen App Bancoppel"
                                    />
+                                  
                                </picture>
+                               
                               
                                 <picture class="qr">
                                     <img                                     
-                                        src="/img/qr-image.png"
+                                        src="/img/qr-img.png"
                                         width="224" height="224"
                                         alt="imagen QR"
                                     />
@@ -50,7 +60,7 @@ export default class AppBanCoppel extends HTMLElement {
                                 Contrato de Servicios Digitales, antes de usar
                                 la Banca Electrónica.
                             </p>
-                            <a href="https://www.bancoppel.com/geolocalizacion/index.html" target="_blank"><custom-boton tipo="primario" texto="Descargar"></custom-boton></a>
+                            <a href="https://bancoppe.onelink.me/UapG/c2757ivk" target="_blank"><custom-boton tipo="primario" texto="Descargar"></custom-boton></a>
                         </div>
                     </div>
                 </div>

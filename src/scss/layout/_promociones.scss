@@ -19,6 +19,12 @@
             }
         } */
     }
+    .swiper-slide:first-child{       
+        margin-left: 24px;
+    }
+    .swiper-slide:last-child{       
+        margin-right: 24px;
+    }
 
     .swiper-pagination {
         position: relative;
@@ -43,6 +49,10 @@
 
                 &:first-child {
                     margin-top: 80px;
+                    margin-left: 0;
+                }
+                &:last-child {                    
+                    margin-right: 0;
                 }
 
                 &:is(:nth-child(4n)) {

@@ -139,7 +139,8 @@
 
         &--fondo {
             img {
-                aspect-ratio: 226/175;
+                // aspect-ratio: 226/175;
+                aspect-ratio: auto;
             }
         }
         &--img {

@@ -1,6 +1,7 @@
 .app {
     padding: 1.5rem 0 4rem 0;
     text-align: center;
+    background: var(--color-blanco-1);
 
     &--instrucciones {
         display: none;
@@ -8,7 +9,8 @@
     &--mockup {
         .image {
             display: inline-block;
-            border-radius: 64px;
+            // border-radius: 64px;
+            border-radius: 2.5rem;
             overflow: hidden;
             height: 270px;
             width: 100%;
@@ -38,6 +40,10 @@
             margin: 1rem 0;
             font-size: 1.125rem;
             line-height: 1.625rem;
+        }
+
+        custom-boton button.primario{
+            width: 100%;
         }
     }
 }
@@ -87,6 +93,7 @@
 
                 img {
                     width: 100%;
+                    object-position: left;
                 }
             }
             .qr {
@@ -114,6 +121,9 @@
             p {
                 margin: 1.5rem 0;
                 text-align: left;
+            }
+            custom-boton button.primario{
+                width: auto;
             }
         }
     }

@@ -18,6 +18,14 @@
         align-content: center;
     }
 
+    .promociones{
+        .row > div:first-child{
+            // border: 1px solid green;
+            padding-left:64px;
+            padding-right:64px;
+        }
+    }
+
     .efectivo {
         overflow: hidden;
         .row {

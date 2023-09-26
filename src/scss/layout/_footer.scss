@@ -15,8 +15,16 @@
 
     h3 {
         margin: 24px 0;
-        font-size: 16px;
-        line-height: 24px;
+        font-family: var(--font-secundaria-bold);
+        @include text-sm-16;
+    }
+    p{
+        margin: 1rem 0;
+        @include text-sm-14;
+
+        span{
+            font-family: var(--font-secundaria-bold);
+        }
     }
     ul {
         padding: 0;
@@ -70,6 +78,7 @@
                 }
             }
         }
+      
 
         .asociacion {
             color: var(--color-amarillo);
@@ -77,6 +86,7 @@
 
         p:last-child {
             margin-bottom: 0;
+            font-family: var(--font-secundaria-bold);
         }
     }
 }

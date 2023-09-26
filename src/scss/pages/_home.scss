@@ -38,11 +38,25 @@
     // .row{
     //   gap:2.625rem;
     // }
+    .custom-container{
+        padding: 0;
+    }
+        // .row{
+        //     margin-right: 12px;
+        //     margin-left: 12px;
+        // }
+
+    .row > div:first-child{
+        // border: 1px solid red;
+        padding-right: 36px;
+        padding-left: 36px;
+    }
 
     &--info {
         color: var(--color-azul-2);
         font-size: 2rem;
         line-height: 2.5rem;
+       
     }
 
     .container-carrusel {
@@ -118,8 +132,17 @@
     }
 
     &--image {
+
+       picture{
+        display: block;
+        border-radius: 2.5rem;
+        overflow: hidden;
+       }
+
         img {
             width: 100%;
+            object-fit: cover;
+             height: 100%
         }
         .img-mobile {
             width: auto;
@@ -186,6 +209,11 @@
     p:last-child span {
         font-size: 18px;
         line-height: 28px;
+    }
+
+    a{
+        color: var(--color-azul-2);
+        text-decoration: underline;
     }
 }
 

@@ -13,96 +13,72 @@ export default class Footer extends HTMLElement {
                 >
                     <img src="img/Logotipo.svg" alt="Logo BanCoppel" />
                 </a>
-                <h3>Acerca de BanCoppel</h3>
+               
                 <div class="row">
-                    <div class="col-12 col-lg-4">
+                    <div class="col-12 col-lg-3" id="acerca">
+                     <h3>Acerca de BanCoppel</h3>
                         <ul>
-                            <li><a href="">¿Quiénes somos?</a></li>
-                            <li><a href="">Preguntas Frecuentes</a></li>
-                            <li><a href="">Centro de Ayupda</a></li>
-                            <li><a href="">Informacion Corporativa</a></li>
-                            <li><a href="">Repositorio Histórico</a></li>
-                            <li><a href="">Corresponsales</a></li>
-                            <li><a href="">Productos protegidos por el IPAB</a></li>
-                            <li><a href="">Aviso de Privacidad</a></li>
-                            <li><a href="">Robo de Identidad</a></li>
-                            <li><a href="">Tarifas y Comisiones</a></li>
-                            <li>
-                                Unidad Especializada Bancoppel Condusef<br /><br /><a href="tel:(55)
-                                5278 0000">(55)
-                                5278 0000 ext. 510196</a><br /><a href="mailto:une@bancoppel.com">une@bancoppel.com</a>
-                            </li>
+                            <li><a href="javascript:void(0);">¿Quiénes somos?</a></li>
+                            <li><a href="javascript:void(0);">Informacion Corporativa</a></li>
+                            <li><a href="javascript:void(0);">Tarifas y Comisiones</a></li>                            
+                            
                         </ul>
                     </div>
-                    <div class="col-12 col-lg-4">
-                        <ul>
-                            <li><a href="">Despachos de Cobranza Internos</a></li>
-                            <li><a href="">Despachos de Cobranza Externos</a></li>
-                            <li><a href="">Tips de Seguridad</a></li>
-                            <li><a href="">Localiza tu Sucursal</a></li>
-                            <li><a href="">Educación Financiera</a></li>
-                            <li><a href="">API Market</a></li>
-                        </ul>
+                    <div class="col-12 col-lg-6" id="unidad">
+                        <h3>Unidad Especializada Bancoppel Condusef</h3>
+                        <p>
+                            BanCoppel, S.A., Institución de Banca Múltiple recibe las consultas, reclamaciones o
+                            aclaraciones en su Unidad Especializada de Atención a Usuarios, ubicada en 
+                            Av. Insurgentes Sur 553, Interior Piso 6,
+                        </p>
+                        <p>
+                            Colonia Escandón II Sección, C.P. 11800, Miguel Hidalgo, Ciudad de México y 
+                            por <span> correo electrónico une@bancoppel.com </span> o <span>teléfono (55) 5278 0000 ext. 510196</span> , 
+                            así como en cualquiera de sus sucursales u oficinas. En el caso de no obtener una 
+                            respuesta satisfactoria, podrá acudir a la Comisión Nacional para la Protección 
+                            y Defensa de los Usuarios de Servicios Financieros.
+                        </p>
+                        <p>
+                           <span> Correo electrónico: asesoria@condusef.gob.mx, chat en línea 
+                            www.condusef.gob.mx o Tel: 800 999 8080 y 55 53 40 09 99.
+                           </span>   
+                        </p>
                     </div>
-                    <div class="col-12 col-lg-4">
-                        <ul class="footer--desplegables">
-                            <li class="desplegable"><a href="">
-                                Sucursales y cajeros
-                                <span
-                                    ><img
-                                        src="/img/arrow-right.svg"
-                                        alt="Icono Flecha Derecha"
-                                /></span>
-                            </a></li>
-                            <li class="desplegable"><a href="">
-                                Bolsa de trabajo
-                                <span
-                                    ><img
-                                        src="/img/arrow-right.svg"
-                                        alt="Icono Flecha Derecha"
-                                /></span>
-                            </a></li>
-                            <li class="desplegable"><a href="">
-                                Centro de ayuda
-                                <span
-                                    ><img
-                                        src="/img/arrow-right.svg"
-                                        alt="Icono Flecha Derecha"
-                                /></span>
-                            </a></li>
-                            <li class="desplegable"><a href="">Contacto</a></li>
-                        </ul>
+                    <div class="col-12 col-lg-3" id="contacto">
+                      <h3>Contacto</h3>
                         <ul>
                             <li>
                                 Lada sin costo en México<br />
-                                800-1-226-773
+                               <a href="tel:8001226773"> 800-1-226-773 </a>
                             </li>
                             <li>
                                 Desde Estados Unidos y Canadá<br />
-                                866-254-3790
+                                <a href="tel:8662543790">866-254-3790</a>
                             </li>
                         </ul>
                         <div class="footer--socials">
-                            <a href="" target="_blank"><img
+                            <a href="javascript:void(0);" target="_blank"><img
                                 src="/img/icon-facebook.svg"
+                                title="Facebook"
                                 alt="Logo Facebook"
                             /></a>
-                            <a href="" target="_blank"><img
-                                src="/img/icon-linkedin.svg"
-                                alt="Logo Linkedin"
-                            /></a>
-                            <a href="" target="_blank"><img
+                            <a href="javascript:void(0);" target="_blank"><img
                                 src="/img/icon-youtube.svg"
+                                title="Youtube"
                                 alt="Logo Youtube"
                             /></a>
+                            
                         </div>
                     </div>
                 </div>
 
                 <div class="footer--sponsors">
-                    <img src="/img/icon-fintech.svg" alt="Logo Fintech" />
-                    <img src="/img/fundacion.png" alt="Logo Fundacion" />
-                    <img src="/img/buro.svg" alt="Logo Fintech" />
+                    <a href="javascript:void(0);">
+                        <img src="/img/icon-fintech.svg" alt="Logo Fintech"  title="FINTECH"/>
+                    </a>
+                    <a href="javascript:void(0);">
+                        <img src="/img/buro.svg" alt="Logo Fintech" title="Buro"/>
+                    </a>
                 </div>
                 <div class="footer--legales">
                     <p>
@@ -111,22 +87,15 @@ export default class Footer extends HTMLElement {
                             >Bancoppel S.A Institución de Banca Múltiple</span
                         >
                         - Todos los derechos reservados
-                        <a href="">Tarifas y comisiones de crédito</a>
-                        <a href="">Tarifas y comisiones de captación</a>
+                       
                     </p>
-                    <p>
-                        Consulta nuestros productos más destacados:
-                        <a href=""> TDC Gratis</a>
-                        <a href=""> TDC en línea</a>
-                        <a href=""> Crédito BanCoppel</a>
-                        <a href=""> Crédito Bancario</a>
+                    <p id="links-legal">
+                        Consulta nuestros productos más destacados
+                        <a href="javascript:void(0);">Términos y Condiciones de Uso </a>
+                        <a href="javascript:void(0);"> Aviso de Privacidad </a>
+                       
                     </p>
-                    <p>
-                        <a href="">Términos y Condiciones de Uso </a>
-                        <a href=""> Aviso de Privacidad </a>
-                        <a href="">Mapa de Sitio </a>
-                        <a href="">Repositorio Histórico</a>
-                    </p>
+                    
                 </div>
             </div>
         </footer>
