@@ -35,7 +35,7 @@ export default class AppBanCoppel extends HTMLElement {
                                 <picture class="qr">
                                     <img                                     
                                         src="/img/qr-img.png"
-                                        width="224" height="224"
+                                        width="151" height="147"
                                         alt="imagen QR"
                                     />
                                 </picture>

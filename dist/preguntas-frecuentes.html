@@ -7,11 +7,21 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
         <title>Horas Azules | Ayuda</title>
-      <script type="module" crossorigin src="./js/preguntasFrecuentes-e471be34.js"></script>
-      <link rel="modulepreload" crossorigin href="./js/main-d1d0c078.js">
-      <link rel="stylesheet" href="./css/main-91555ca6.css">
+         <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-P7456C6L');</script>
+        <!-- End Google Tag Manager -->
+      <script type="module" crossorigin src="./js/preguntasFrecuentes-96e2aa1d.js"></script>
+      <link rel="modulepreload" crossorigin href="./js/medicion-f40a26a0.js">
+      <link rel="stylesheet" href="./css/medicion-bc13fda2.css">
     </head>
     <body>
+          <!-- Google Tag Manager (noscript) -->
+          <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P7456C6L" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+          <!-- End Google Tag Manager (noscript) -->
         <custom-header nav-active="nav-ayuda"></custom-header>
         <main class="main-ayuda">
             <section class="faqs">
@@ -70,5 +80,22 @@
         <custom-footer></custom-footer>
         
         
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                metrica7();    
+                
+                //Metrica 1-C
+
+                const accordionItems = document.querySelectorAll('custom-accordion');
+                accordionItems.forEach(accordionItem => {
+                    accordionItem.addEventListener('click',function(){
+                      
+                        metrica7A(accordionItem.getAttribute('title'))
+                    })
+               });
+               
+            });
+        </script>
     </body>
 </html>

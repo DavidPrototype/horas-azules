@@ -25,7 +25,7 @@ const enableSwiper = new Swiper(".swiper", {
                 //   },
             slidesPerView: 3,
             slidesPerGroup:3,
-            spaceBetween: 192
+            spaceBetween: 128
             }
         },
         direction: "horizontal",

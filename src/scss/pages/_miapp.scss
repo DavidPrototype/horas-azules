@@ -259,3 +259,30 @@
         }
     }
 }
+
+@include media-breakpoint-up(xxl) {
+
+    .compras{
+       
+        padding: 6rem 0 !important;
+      
+
+        &--carousel{
+            padding:0 3rem;
+            width: 70%;
+            height: 600px;
+            margin: 0 auto 1rem auto;
+            // padding-left: 128px;
+            // position: relative;           
+            // top: 250px;
+            }
+    
+    }
+        
+    
+    
+}
+
+
+
+
