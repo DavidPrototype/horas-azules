@@ -11,7 +11,7 @@ export default class Button extends HTMLElement {
         let tipo = this.getAttribute("tipo");
 
         this.innerHTML = `
-              <button class="${tipo}" id='${id}'>${texto}</buton>`;
+              <button class="btn ${tipo}" id='${id}'>${texto}</buton>`;
     }
 
     attributeChangesCallback(nombreAtr, viejoAtr, nuevoAtr) {}

@@ -23,7 +23,7 @@
                 <div class="custom-container">
                     <div class="row justify-content-center">
                         <div class="link-back">
-                            <a href="index.html">
+                            <a href="index.html#promociones">
                                 <img src="icons/icon-arrow-back.svg" alt="" />
                                 Regresar</a
                             >
@@ -34,8 +34,13 @@
                                 <p>
                                     Presenta el código que está a la derecha y
                                     recibe un 10% de descuento al comprar en
-                                    www.mx.andrea.com o 5% en todas las tiendas
-                                    físicas Andrea a nivel nacional.
+                                    <a
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#modal-salida-andrea"
+                                        >www.mx.andrea.com</a
+                                    >
+                                    o 5% en todas las tiendas físicas Andrea a
+                                    nivel nacional.
                                 </p>
                                 <h5>
                                     Vigencia del 1 de agosto del 2023 al 31 de
@@ -80,16 +85,21 @@
                     <div class="custom-container">
                         <h5><strong>Términos y Condiciones</strong></h5>
                         <p>
-                            Promoción no valida en conjunto con otras
-                            promociones y/o descuentos. Válida en cualquier
-                            unidad Benedetti´s Pizza en mostrador o vía
-                            telefónica
+                            No aplica con otras promociones en sucursales: El
+                            cliente debe mencionar que pagará con tarjeta
+                            BanCoppel para obtener el beneficio. En línea: El
+                            cliente deberá ingresar el cupón BANCOPPEL10 durante
+                            su proceso de compra.
                         </p>
                     </div>
                 </div>
             </section>
         </main>
         <custom-footer></custom-footer>
+        <modal-salida
+            id-modal="modal-salida-andrea"
+            link-btn-salida="https://www.mx.andrea.com"
+        ></modal-salida>
         <script type="module" src="./js/main.js"></script>
         <script   src="./js/medicion.js"></script>
         <script>

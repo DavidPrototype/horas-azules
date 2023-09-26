@@ -18,5 +18,5 @@ import Alert from "./components/alert";
 import Accordion from "./components/accordion";
 import ModalSalida from "./components/modals";
 
-/* const modal = new Modal(document.getElementById("modal-salida"));
+/* const modal = new Modal(document.getElementById("modal-salida-andrea"));
 modal.show(); */

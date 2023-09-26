@@ -9,6 +9,10 @@
         position: absolute;
         left: 24px;
         top: -12px;
+
+        h6 {
+            @include text-md-20;
+        }
     }
 
     &__info {
@@ -71,6 +75,19 @@
     row-gap: 12px;
     border-radius: 8px;
     background: var(--color-blanco-1);
+    border: 1px solid transparent;
+    box-shadow: var(--color-shadow-default);
+
+    @media (hover: hover) {
+        transition: 0.3s ease-in-out all;
+        &:hover {
+            box-shadow: var(--color-shadow-hover);
+        }
+    }
+
+    &:active {
+        border: 1px solid var(--color-azul-5);
+    }
 
     &.card-icon-active {
         background-color: var(--color-azul-2);
