@@ -57,12 +57,12 @@ export default class Footer extends HTMLElement {
                             </li>
                         </ul>
                         <div class="footer--socials">
-                            <a href="javascript:void(0);" target="_blank"><img
+                            <a href="https://www.facebook.com/BanCoppel/" target="_blank"><img
                                 src="/img/icon-facebook.svg"
                                 title="Facebook"
                                 alt="Logo Facebook"
                             /></a>
-                            <a href="javascript:void(0);" target="_blank"><img
+                            <a href="https://www.youtube.com/channel/UCiLO44Yr96fpdkv-ZN-duqg" target="_blank"><img
                                 src="/img/icon-youtube.svg"
                                 title="Youtube"
                                 alt="Logo Youtube"
