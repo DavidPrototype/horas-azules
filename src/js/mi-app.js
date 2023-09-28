@@ -1,6 +1,8 @@
 const enableSwiper = new Swiper(".swiper", {
         spaceBetween: 16,
         slidesPerView: 'auto',
+       
+        
         
        
         // Responsive breakpoints
@@ -16,8 +18,10 @@ const enableSwiper = new Swiper(".swiper", {
                 //     cols: 2,
                 //   },
             slidesPerView: 3,
-            slidesPerGroup:3,
-            spaceBetween: 32
+            slidesPerGroup:3,            
+            spaceBetween: 16,
+            autoHeight:true
+            
             },
             1920: {
                 // grid: {
@@ -25,7 +29,12 @@ const enableSwiper = new Swiper(".swiper", {
                 //   },
             slidesPerView: 3,
             slidesPerGroup:3,
-            spaceBetween: 128
+            spaceBetween: 192,
+            autoHeight:true
+            // centeredSlides:true,
+            // centeredSlidesBounds:true,
+
+           
             }
         },
         direction: "horizontal",

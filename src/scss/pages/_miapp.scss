@@ -161,7 +161,7 @@
 
     .compras{
         overflow: hidden;
-        padding: 6rem 0 !important;
+        padding: 6rem 0;
         &--info{
            h2.title-underline{
              @include text-lg-48;
@@ -176,9 +176,11 @@
         &--carousel{
           
             width: 90%;
+            padding:0 128px;
             height: 600px;
             margin: 0 auto 1rem auto;
-            padding-left: 128px;
+            // padding-left: 128px;
+          
             position: relative;
            
             
@@ -189,6 +191,11 @@
             .swiper-slide:first-child{
                 
                 margin-left:0 !important;
+            }            
+
+            .swiper-slide:last-child{
+                
+                margin-right:0 !important;
             }
             
             .swiper-button-next,
@@ -268,8 +275,8 @@
       
 
         &--carousel{
-            padding:0 3rem;
-            width: 70%;
+            // padding:0 3rem;
+            padding:0 192px;
             height: 600px;
             margin: 0 auto 1rem auto;
             // padding-left: 128px;
