@@ -5,17 +5,27 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Hora Azules | Promociones</title>
-      <script type="module" crossorigin src="./js/main-93db8d36.js"></script>
-      <link rel="stylesheet" href="./css/main-68efac71.css">
+        <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-P7456C6L');</script>
+        <!-- End Google Tag Manager -->
+      <script type="module" crossorigin src="./js/main-31f8f780.js"></script>
+      <link rel="stylesheet" href="./css/main-24dd8647.css">
     </head>
     <body>
+         <!-- Google Tag Manager (noscript) -->
+         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P7456C6L" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+         <!-- End Google Tag Manager (noscript) -->
         <custom-header></custom-header>
         <main class="main-promo">
             <section>
                 <div class="custom-container">
                     <div class="row justify-content-center">
                         <div class="link-back">
-                            <a href="index.html">
+                            <a href="index.html#promociones">
                                 <img src="icons/icon-arrow-back.svg" alt="" />
                                 Regresar</a
                             >
@@ -26,8 +36,13 @@
                                 <p>
                                     Presenta el código que está a la derecha y
                                     recibe un 10% de descuento al comprar en
-                                    www.mx.andrea.com o 5% en todas las tiendas
-                                    físicas Andrea a nivel nacional.
+                                    <a
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#modal-salida-andrea"
+                                        >www.mx.andrea.com</a
+                                    >
+                                    o 5% en todas las tiendas físicas Andrea a
+                                    nivel nacional.
                                 </p>
                                 <h5>
                                     Vigencia del 1 de agosto del 2023 al 31 de
@@ -72,16 +87,32 @@
                     <div class="custom-container">
                         <h5><strong>Términos y Condiciones</strong></h5>
                         <p>
-                            Promoción no valida en conjunto con otras
-                            promociones y/o descuentos. Válida en cualquier
-                            unidad Benedetti´s Pizza en mostrador o vía
-                            telefónica
+                            No aplica con otras promociones en sucursales: El
+                            cliente debe mencionar que pagará con tarjeta
+                            BanCoppel para obtener el beneficio. En línea: El
+                            cliente deberá ingresar el cupón BANCOPPEL10 durante
+                            su proceso de compra.
                         </p>
                     </div>
                 </div>
             </section>
         </main>
         <custom-footer></custom-footer>
+        <modal-salida
+            id-modal="modal-salida-andrea"
+            link-btn-salida="https://www.mx.andrea.com"
+        ></modal-salida>
         
+        <script src="./js/medicion.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                metrica2('Andrea');
+                //Boton regresar metrica 3-A
+                const linkRegresar = document.querySelector('.link-back a');
+                linkRegresar.addEventListener('click',()=>{
+                    metrica3A();
+                });
+            });
+        </script>
     </body>
 </html>
