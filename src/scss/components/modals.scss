@@ -30,6 +30,9 @@
         p {
             @include text-sm-16;
         }
+        a{
+            text-decoration: none;
+        }
 
         #btn-salida {
             width: max-content;
