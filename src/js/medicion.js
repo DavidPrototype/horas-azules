@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
      //Metrica 1-A
     const menuOpciones = document.querySelectorAll('.nav--menu .menu__item');
     menuOpciones.forEach(menuopcion => {
+       
         menuopcion.addEventListener('click',()=>{
             metrica1A(menuopcion.innerText);
             metrica10A(menuopcion.innerText);

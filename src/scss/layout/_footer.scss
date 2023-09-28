@@ -3,6 +3,10 @@
     background: var(--color-primario-azul-400);
     color: var(--color-blanco-1);
     font-family: var(--font-secundaria-regular);
+    
+        a{
+            text-decoration: none;
+        }
 
     .row {
         padding-bottom: 40px;
@@ -40,7 +44,7 @@
             }
         }
     }
-
+   
     &--socials {
         display: flex;
         gap: 16px;
@@ -62,6 +66,7 @@
             margin-bottom: 16px;
             @include text-xs-12;
 
+            
             a {
                 text-decoration: none;
                 position: relative;
@@ -76,6 +81,10 @@
                     margin: 0 4px;
                     background: var(--color-amarillo);
                 }
+            }
+
+            a:first-child::before{
+                width: 0;
             }
         }
       

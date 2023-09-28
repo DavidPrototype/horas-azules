@@ -18,9 +18,9 @@ export default class Footer extends HTMLElement {
                     <div class="col-12 col-lg-3" id="acerca">
                      <h3>Acerca de BanCoppel</h3>
                         <ul>
-                            <li><a href="javascript:void(0);">¿Quiénes somos?</a></li>
-                            <li><a href="javascript:void(0);">Informacion Corporativa</a></li>
-                            <li><a href="javascript:void(0);">Tarifas y Comisiones</a></li>                            
+                            <li><a href="https://www.bancoppel.com/acerca_bancoppel/quienes_somos.html?v=2" target="_blank">¿Quiénes somos?</a></li>
+                            <li><a href="https://www.bancoppel.com/acerca_bancoppel/info_corp.html?v=2" target="_blank">Informacion Corporativa</a></li>
+                            <li><a href="https://www.bancoppel.com/imagenes/1001/pdf.php?id=4836a6a5" target="_blank">Tarifas y comisiones de crédito</a></li>                            
                             
                         </ul>
                     </div>
@@ -33,14 +33,14 @@ export default class Footer extends HTMLElement {
                         </p>
                         <p>
                             Colonia Escandón II Sección, C.P. 11800, Miguel Hidalgo, Ciudad de México y 
-                            por <span> correo electrónico une@bancoppel.com </span> o <span>teléfono (55) 5278 0000 ext. 510196</span> , 
+                            por  <span> correo electrónico <a href="mailto:une@bancoppel.com">une@bancoppel.com</a> </span> o <span>teléfono (55) 5278 0000 ext. 510196</span> , 
                             así como en cualquiera de sus sucursales u oficinas. En el caso de no obtener una 
                             respuesta satisfactoria, podrá acudir a la Comisión Nacional para la Protección 
                             y Defensa de los Usuarios de Servicios Financieros.
                         </p>
                         <p>
-                           <span> Correo electrónico: asesoria@condusef.gob.mx, chat en línea 
-                            www.condusef.gob.mx o Tel: 800 999 8080 y 55 53 40 09 99.
+                           <span> Correo electrónico: <a href="mailto:une@bancoppel.com">asesoria@condusef.gob.mx</a>, chat en línea 
+                            <a href="https://www.condusef.gob.mx/" target="_blank">www.condusef.gob.mx</a> o Tel: 800 999 8080 y 55 53 40 09 99.
                            </span>   
                         </p>
                     </div>
@@ -76,7 +76,7 @@ export default class Footer extends HTMLElement {
                     <a href="javascript:void(0);">
                         <img src="/img/icon-fintech.svg" alt="Logo Fintech"  title="FINTECH"/>
                     </a>
-                    <a href="javascript:void(0);">
+                    <a href="https://www.bancoppel.com/modal_bcopp/buro.html" target="_blank">
                         <img src="/img/buro.svg" alt="Logo Fintech" title="Buro"/>
                     </a>
                 </div>
@@ -90,9 +90,9 @@ export default class Footer extends HTMLElement {
                        
                     </p>
                     <p id="links-legal">
-                        Consulta nuestros productos más destacados
-                        <a href="javascript:void(0);">Términos y Condiciones de Uso </a>
-                        <a href="javascript:void(0);"> Aviso de Privacidad </a>
+                       <a href="https://www.bancoppel.com/imagenes/1001/pdf.php?id=4836a6a5" target="_blank"> Consulta nuestros productos más destacados</a>
+                        <a href="https://www.bancoppel.com/acerca_bancoppel/terminos.html" target="_blank">Términos y Condiciones de Uso </a>
+                        <a href="https://www.bancoppel.com/acerca_bancoppel/aviso.html" target="_blank"> Aviso de Privacidad </a>
                        
                     </p>
                     
