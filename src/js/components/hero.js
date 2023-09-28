@@ -48,9 +48,9 @@ export default class Hero extends HTMLElement {
                             imagenTarjeta == "hide"
                                 ? ""
                                 : '<picture class="hero--img--tdc"><source srcset="' +
-                                  imagenTarjeta +
-                                  '" type="image/webp"><img class="w-100" src="' +
                                   imagenTarjetaWebp +
+                                  '" type="image/webp"><img class="w-100" src="' +
+                                  imagenTarjeta +
                                   '" alt="Imagen Tarjeta Credito Bancoppel" /></picture>'
                         }
                         ${

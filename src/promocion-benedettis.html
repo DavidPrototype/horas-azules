@@ -5,18 +5,35 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Hora Azules | Promociones</title>
-         <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-P7456C6L');</script>
+        <!-- Google Tag Manager -->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    "gtm.start": new Date().getTime(),
+                    event: "gtm.js",
+                });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != "dataLayer" ? "&l=" + l : "";
+                j.async = true;
+                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, "script", "dataLayer", "GTM-P7456C6L");
+        </script>
         <!-- End Google Tag Manager -->
     </head>
     <body>
-         <!-- Google Tag Manager (noscript) -->
-         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P7456C6L" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-         <!-- End Google Tag Manager (noscript) -->
+        <!-- Google Tag Manager (noscript) -->
+        <noscript
+            ><iframe
+                src="https://www.googletagmanager.com/ns.html?id=GTM-P7456C6L"
+                height="0"
+                width="0"
+                style="display: none; visibility: hidden"
+            ></iframe
+        ></noscript>
+        <!-- End Google Tag Manager (noscript) -->
         <custom-header></custom-header>
         <main class="main-promo">
             <section>
@@ -51,22 +68,18 @@
                             <picture class="img-promo">
                                 <source
                                     media="(min-width:1280px )"
-                                    srcset="img/promocion-4-desktop.webp"
+                                    srcset="img/pizza.webp"
                                     type="image/webp"
                                 />
                                 <source
                                     media="(min-width:1280px )"
-                                    srcset="img/promocion-4-desktop.jpg"
+                                    srcset="img/pizza.jpeg"
                                 />
                                 <source
-                                    srcset="img/promocion-4.webp"
+                                    srcset="img/pizza.webp"
                                     type="image/webp"
                                 />
-                                <img
-                                    class="w-100"
-                                    src="img/promocion-4.png"
-                                    alt=""
-                                />
+                                <img class="w-100" src="img/pizza.png" alt="" />
                             </picture>
                         </div>
                     </div>
@@ -86,17 +99,15 @@
         </main>
         <custom-footer></custom-footer>
         <script type="module" src="./js/main.js"></script>
-        <script src="./js/medicion.js"></script>
+        <script type="module" src="./js/medicion.js"></script>
         <script>
-            document.addEventListener('DOMContentLoaded', function () {
+            document.addEventListener("DOMContentLoaded", function () {
                 metrica2("Benedettis");
-                 //Boton regresar metrica 3-A
-                 const linkRegresar = document.querySelector('.link-back a');
-                 linkRegresar.addEventListener('click',()=>{
+                //Boton regresar metrica 3-A
+                const linkRegresar = document.querySelector(".link-back a");
+                linkRegresar.addEventListener("click", () => {
                     metrica3A();
                 });
-
-
             });
         </script>
     </body>
