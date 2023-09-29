@@ -71,7 +71,7 @@ export default class Hero extends HTMLElement {
                 <div class="hero hero-${tipo}">
                     <div class="hero--info">
                         <h1 class="title-underline">${titulo}</h1>
-                        <p><strong>${subtitulo}</strong></p>
+                        <p>${subtitulo}</p>
 
                         ${
                             textButton == "hide"

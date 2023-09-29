@@ -69,6 +69,7 @@
         p {
             @include text-lg-36;
             color: var(--color-gris-600);
+            font-family: var(--font-primaria-bold);
         }
 
         .hero--producto {
@@ -135,6 +136,7 @@
         }
         p {
             @include text-lg-36;
+           
         }
 
         &--fondo {
