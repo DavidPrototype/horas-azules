@@ -58,12 +58,12 @@ export default class Footer extends HTMLElement {
                         </ul>
                         <div class="footer--socials">
                             <a href="https://www.facebook.com/BanCoppel/" target="_blank"><img
-                                src="/img/icon-facebook.svg"
+                                src="img/icon-facebook.svg"
                                 title="Facebook"
                                 alt="Logo Facebook"
                             /></a>
                             <a href="https://www.youtube.com/channel/UCiLO44Yr96fpdkv-ZN-duqg" target="_blank"><img
-                                src="/img/icon-youtube.svg"
+                                src="img/icon-youtube.svg"
                                 title="Youtube"
                                 alt="Logo Youtube"
                             /></a>
@@ -74,10 +74,10 @@ export default class Footer extends HTMLElement {
 
                 <div class="footer--sponsors">
                     <a href="javascript:void(0);">
-                        <img src="/img/icon-fintech.svg" alt="Logo Fintech"  title="FINTECH"/>
+                        <img src="img/icon-fintech.svg" alt="Logo Fintech"  title="FINTECH"/>
                     </a>
                     <a href="https://www.bancoppel.com/modal_bcopp/buro.html" target="_blank">
-                        <img src="/img/buro.svg" alt="Logo Fintech" title="Buro"/>
+                        <img src="img/buro.svg" alt="Logo Fintech" title="Buro"/>
                     </a>
                 </div>
                 <div class="footer--legales">

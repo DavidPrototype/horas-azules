@@ -25,7 +25,7 @@ export default class AppBanCoppel extends HTMLElement {
                                    />
                                    
                                    <img                                                                           
-                                       srcset="/img/app.jpeg"
+                                       srcset="img/app.jpeg"
                                        alt="magen App Bancoppel"
                                    />
                                   
@@ -33,9 +33,9 @@ export default class AppBanCoppel extends HTMLElement {
                                
                               
                                 <picture class="qr">
-                                    <source srcset="/img/qr-img.webp" type="image/webp">
+                                    <source srcset="img/qr-img.webp" type="image/webp">
                                     <img                                     
-                                        src="/img/qr-img.png"
+                                        src="img/qr-img.png"
                                         width="151" height="147"
                                         alt="imagen QR"
                                     />
@@ -44,7 +44,7 @@ export default class AppBanCoppel extends HTMLElement {
                         </div>
                         <div class="col-lg-8 app--instrucciones">
                             <picture>
-                                <img src="/icons/idea.svg" alt="" />
+                                <img src="icons/idea.svg" alt="" />
                             </picture>
                             <p>
                                 Pon la cámara de tu celular frente al código QR
