@@ -26,7 +26,7 @@ export default class AppBanCoppel extends HTMLElement {
                                    
                                    <img                                                                           
                                        srcset="img/app.jpeg"
-                                       alt="magen App Bancoppel"
+                                       alt="Imagen App Bancoppel"
                                    />
                                   
                                </picture>
