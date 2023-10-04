@@ -222,9 +222,7 @@
                                 BanCoppel*
                             </h2>
                             <p>
-                                Acude a cualquier Sucursal para firmar el
-                                Contrato de Servicios Digitales, antes de usar
-                                la Banca Electrónica.
+                                Haz compras seguras, transfiere, recarga tiempo aire, activa y desactiva tarjetas, y mucho más desde tu celular.
                             </p>
                             <a href="https://bancoppe.onelink.me/UapG/c2757ivk" target="_blank"><custom-boton tipo="primario" texto="Descargar"></custom-boton></a>
                         </div>
