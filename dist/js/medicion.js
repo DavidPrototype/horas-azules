@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const socialesFooter = document.querySelectorAll('.footer--socials img')
     socialesFooter.forEach(social => {
             social.addEventListener('click',function(){
-                console.log(social.getAttribute('title'));
+                // console.log(social.getAttribute('title'));
                   metrica11D( social.getAttribute('title'));
             });
        });
