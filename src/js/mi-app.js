@@ -23,6 +23,16 @@ const enableSwiper = new Swiper(".swiper", {
             autoHeight:true
             
             },
+            1600: {
+                // grid: {
+                //     cols: 2,
+                //   },
+            slidesPerView: 3,
+            slidesPerGroup:3,            
+            spaceBetween: 128,
+            autoHeight:true
+            
+            },
             1920: {
                 // grid: {
                 //     cols: 2,
