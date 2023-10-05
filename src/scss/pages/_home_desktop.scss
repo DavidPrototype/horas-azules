@@ -117,7 +117,8 @@
             /* a {
                 display: none;
             } */
-            a.boton {
+            a {
+                display: inline-block;
                 margin-left: 6rem;
             }
         }

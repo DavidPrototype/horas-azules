@@ -35,6 +35,19 @@ const enableSwiper = new Swiper(".swiper", {
             // centeredSlidesBounds:true,
 
            
+            },
+            2560: {
+                // grid: {
+                //     cols: 2,
+                //   },
+            slidesPerView: 3,
+            slidesPerGroup:3,
+            spaceBetween: 232,
+            autoHeight:true
+            // centeredSlides:true,
+            // centeredSlidesBounds:true,
+
+           
             }
         },
         direction: "horizontal",
