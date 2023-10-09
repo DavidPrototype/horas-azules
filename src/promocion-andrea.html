@@ -115,6 +115,18 @@
                 linkRegresar.addEventListener('click',()=>{
                     metrica3A();
                 });
+
+                //Modal Metrica
+                const modalSalida = document.querySelector('modal-salida .modal')
+                modalSalida.addEventListener('shown.bs.modal', () => {
+                    metrica2B('Andrea');
+                    
+                })
+
+                const modalbutton = document.querySelector('modal-salida .modal custom-boton')
+                modalbutton.addEventListener('click',function(){
+                    metrica2C('Andrea');
+                });
             });
         </script>
     </body>
