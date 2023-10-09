@@ -118,12 +118,17 @@
                       <h3>Contacto</h3>
                         <ul>
                             <li>
-                                Lada sin costo en México<br />
-                               <a href="tel:8001226773"> 800-1-226-773 </a>
+                            <a 
+                                href="tel:8001226773"                               
+                            > 
+                            Lada sin costo en México<br />
+                            800-1-226-773 
+                             </a>
                             </li>
                             <li>
+                              <a href="tel:8662543790">
                                 Desde Estados Unidos y Canadá<br />
-                                <a href="tel:8662543790">866-254-3790</a>
+                               866-254-3790</a>
                             </li>
                         </ul>
                         <div class="footer--socials">
