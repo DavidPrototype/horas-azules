@@ -15,7 +15,7 @@
             })(window,document,'script','dataLayer','GTM-P7456C6L');</script>
             <!-- End Google Tag Manager -->
             
-      <script type="module" crossorigin src="./js/main-2d035c59.js"></script>
+      <script type="module" crossorigin src="./js/main-b4ea4b10.js"></script>
       <link rel="stylesheet" href="./css/main-3d7a7b6f.css">
     </head>
     <body>
@@ -113,29 +113,24 @@
             document.addEventListener('DOMContentLoaded', function () {
                 metrica2("Farmacias VITAU");
 
-                const linkVitau = document.querySelector('.main-promo--info a')
-                    linkVitau.addEventListener('click',()=>{
-                        metrica2A("Farmacias VITAU");
-
-                         //Metrica modal
-
-                        const modal = document.querySelector('modal-salida .modal')
-                        
-                        if ( modal.classList.contains('show')){
-                            metrica2A('Farmacias VITAU')
-                        }
-
-                        const modalbutton = document.querySelector('modal-salida .modal custom-boton')
-                        modalbutton.addEventListener('click',function(){
-                            metrica2C('Farmacias VITAU');
-                        });
-                    })
-
                  //Boton regresar metrica 3-A
                 const linkRegresar = document.querySelector('.link-back a');
                 linkRegresar.addEventListener('click',()=>{
                     metrica3A();
                 })
+
+                //Metrica MOdal
+                const modalSalida = document.querySelector('modal-salida .modal')
+                modalSalida.addEventListener('shown.bs.modal', () => {
+                    metrica2B('Farmacias VITAU');
+                    
+                })
+
+                const modalbutton = document.querySelector('modal-salida .modal custom-boton')
+                modalbutton.addEventListener('click',function(){
+                    metrica2C('Farmacias VITAU');
+                });
+
 
                
 
