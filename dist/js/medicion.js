@@ -114,30 +114,32 @@ document.addEventListener('DOMContentLoaded', function () {
     * Funciones 2 : A, B, C
    */
     function metrica2(nd2){
-        // window.localStorage.setItem('Metrica2','Llegada');
-        // window.localStorage.setItem('Metrica2-Promo',nd2);
+      
        
         dataLayer.push({
-            page:'/horas-azules-bcpl/promociones',
-            title:'Horas azules bancoppel - Promociones', 
+            page:'/horas-azules-bcpl/promociones/'+ nd2,
+            title:'Horas azules bancoppel - Promociones - '+ nd2, 
             event:'pvGeneral'               
          });
 
+    }
+
+    function metrica2_2(nd2){
         dataLayer.push({
             nd1:'Horas azules BanCoppel',
-            nd2:'Horas azules BanCoppel - ' + nd2,
-            nd3:'Llegada',
+            nd2:'Llegada - ' + nd2,
+            nd3:'',
             nd4:'',
             event:'horasAzulesBcpl'
         });
     }
 
-    function metrica2A(nd2){
+    function metrica2A(nd2, nd3){
        
         dataLayer.push({
             nd1:'Horas azules BanCoppel - Promociones',
-            nd2:'Llegada - ' + nd2,
-            nd3:'',
+            nd2: nd2,
+            nd3:nd3,
             nd4:'',
             event:'horasAzulesBcpl'
         });
@@ -165,11 +167,20 @@ document.addEventListener('DOMContentLoaded', function () {
 /**
  * Funcion 3
  */
-    function metrica3A(){
+    // function metrica3A(){
+    //     dataLayer.push({
+    //         nd1:'Horas azules BanCoppel - Promociones',
+    //         nd2:'Regresar',
+    //         nd3:'',
+    //         nd4:'',
+    //         event:'horasAzulesBcpl'
+    //     });
+    // }
+    function metrica3A(nd2){
         dataLayer.push({
             nd1:'Horas azules BanCoppel - Promociones',
-            nd2:'Regresar',
-            nd3:'',
+            nd2:nd2,
+            nd3:'Regresar',
             nd4:'',
             event:'horasAzulesBcpl'
         });

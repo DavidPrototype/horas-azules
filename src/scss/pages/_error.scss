@@ -1,0 +1,27 @@
+.main-error{
+
+    padding: 4rem 0 0 0;
+
+    .error{
+        picture{
+            img{
+                width: 100%;
+            }
+        }
+
+        h1{
+            font-family: var(--font-primaria-bold);            
+            @include text-lg-32;
+            color:var(--color-azul-2);
+            margin: 2.5rem 0;
+        }
+
+        p{
+           font-family: var(--font-primaria-bold);           
+           @include text-sm-18;
+           span{
+            color:var(--color-azul-2);
+           }
+        }
+    }
+}

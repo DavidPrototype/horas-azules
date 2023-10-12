@@ -109,12 +109,20 @@
         <script src="js/medicion.js"></script>
         <script>
             document.addEventListener('DOMContentLoaded', function () {
-                metrica2('Andrea');
+                metrica2('andrea');
+                metrica2_2('Andrea');
                 //Boton regresar metrica 3-A
                 const linkRegresar = document.querySelector('.link-back a');
                 linkRegresar.addEventListener('click',()=>{
-                    metrica3A();
+                    metrica3A('Andrea');
                 });
+
+                const promoLinkExterno = document.querySelector('.main-promo--info a');
+                promoLinkExterno.addEventListener('click',()=>{
+                    metrica2A('Andrea', promoLinkExterno.innerText);
+                })
+
+                //
 
                 //Modal Metrica
                 const modalSalida = document.querySelector('modal-salida .modal')
