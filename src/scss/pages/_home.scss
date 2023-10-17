@@ -216,6 +216,11 @@
         font-size: 18px;
         line-height: 28px;
     }
+    p.link-tyc a{
+        color: var(--color-azul-2) !important;
+        text-decoration: underline !important;
+        cursor: pointer;
+    }
 
     a {
         color: var(--color-azul-2);

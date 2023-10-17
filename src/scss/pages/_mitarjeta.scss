@@ -120,6 +120,14 @@
                     color: var(--color-azul-2);
                 }
             }
+            p.link-ficha-producto{
+               
+                a{
+                    color: var(--color-azul-2) !important;
+                    text-decoration: underline !important;
+                    cursor: pointer;
+                }
+            }
 
         }
     }
@@ -136,8 +144,11 @@
             p.ficha-producto{
                 margin-top: 1rem;
                 a{
-                    color:var(--color-azul-2);
+                   
+                    color: var(--color-azul-2) !important;
+                    text-decoration: underline !important;
                     text-underline-offset: 8px;
+                    cursor: pointer;
                 }
             }
         }

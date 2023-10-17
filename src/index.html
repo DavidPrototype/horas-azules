@@ -44,7 +44,7 @@
                             imagen-webp="img/hero-image-image-1.webp"
                             imagen-tarjeta="img/tdc.png"
                             imagen-tarjeta-webp="img/tdc.webp"
-                            icon="icons/monetizacion.svg" texto-badge="10% de bonificación">
+                            icon="icons/monetizacion.svg" texto-badge="10% de bonificación <a href='#ancla-terminos' class='text-no-decoration'><sup>1</sup></a> ">
                         </custom-hero>
                     </div>
                     <div class="row">
@@ -64,13 +64,16 @@
                                 Recibe
                                 <span
                                     class="strong-circular section-hero--bonificacion--color"
-                                    >10% de bonificación<sup>1</sup></span
-                                >
+                                    >10% de bonificación 
+                                    <a href="#ancla-terminos" class="text-no-decoration"><sup>*1</sup></a>
+                                </span>
                                 al estrenar tu
                                 <span class="strong-circular"
-                                    >Tarjeta de Crédito BanCoppel</span
-                                >
-                                con compras y retiros de efectivo<sup>2</sup> que acumules
+                                    >Tarjeta de Crédito BanCoppel
+                                    <a href="#ancla-terminos" class="text-no-decoration"><sup>3</sup></a>
+                                
+                                </span>
+                                con compras y retiros de efectivo <a href="#ancla-terminos" class="text-no-decoration"><sup>2</sup></a> que acumules
                                 durante los primeros 7 días después de su
                                 activación
                             </p>
@@ -171,7 +174,7 @@
                                 <strong class="strong-circular info--comision"
                                     >8% + IVA</strong
                                 >
-                                sobre el monto que retires<sup>2</sup> en Cajeros
+                                sobre el monto que retires <sup>2</sup> en Cajeros
                                 Automáticos o tu Sucursal BanCoppel.
                             </p>
                             
@@ -192,12 +195,12 @@
                 </div>
             </section>
             <app-bancoppel></app-bancoppel>
-            <section class="terminos">
+            <section class="terminos" id="ancla-terminos">
                 <div class="custom-container">
                     <div class="row">
                         <div class="col-12">
                             <p class="app-terminos">
-                                *Para usar la Banca electrónica, acude a firmar el Contrato de Servicios Digitales en cualquier Sucursal.
+                                *Para hacer uso de los servicios de Banca Electrónica, es indispensable que el cliente haya firmado el contrato de servicios digitales.
                             </p>
                             <p class="strong-circular condiciones" >
                                 Términos y Condiciones Generales
@@ -269,8 +272,9 @@
                                 S.A. de C.V., así como de cualquiera de sus
                                 negocios asociados o vinculados.
                             </p>
-                            <p>
-                                <a href="https://www.bancoppel.com/imagenes/1001/pdf.php?id=4836a6a5" target="_blank" ><span class="strong-circular">Tabla de costos y comisiones</span></a>
+                            <p class="link-tyc">
+                                <!-- <a href="https://www.bancoppel.com/imagenes/1001/pdf.php?id=4836a6a5" target="_blank" ><span class="strong-circular">Tabla de tasas y comisiones</span></a> -->
+                                <a  data-bs-toggle="modal" data-bs-target="#modal-tasas-comisiones"  ><span class="strong-circular">Tabla de tasas y comisiones</span></a>
                             </p>
                         </div>
                     </div>
@@ -281,6 +285,7 @@
         <custom-footer></custom-footer>
 
         <modal-salida id-modal="modal-salida-ubicacion" link-btn-salida="https://www.bancoppel.com/geolocalizacion/index.html"></modal-salida>
+        <modal-salida id-modal="modal-tasas-comisiones" link-btn-salida="https://www.bancoppel.com/imagenes/1001/pdf.php?id=4836a6a5"></modal-salida>
       
         <script type="module" src="./js/main.js"></script>
         <script type="module" src="./js/home.js"></script>
