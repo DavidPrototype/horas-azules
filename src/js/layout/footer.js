@@ -72,6 +72,16 @@ export default class Footer extends HTMLElement {
                                 title="Youtube"
                                 alt="Logo Youtube"
                             /></a>
+                            <a href="https://www.linkedin.com/company/bancoppel/" target="_blank"><img
+                                src="img/linkedin.svg"
+                                title="Logo Linkedin"
+                                alt="Logo Linkedin"
+                            /></a>
+                            <a href="https://www.tiktok.com/@bancoppel" target="_blank"><img
+                                src="img/tiktok.svg"
+                                title="Logo Tik Tok"
+                                alt="Logo Tik Tok"
+                            /></a>
                             
                         </div>
                     </div>
