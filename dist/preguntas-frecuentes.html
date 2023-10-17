@@ -14,9 +14,9 @@
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-P7456C6L');</script>
         <!-- End Google Tag Manager -->
-      <script type="module" crossorigin src="./js/preguntasFrecuentes-192ab34f.js"></script>
-      <link rel="modulepreload" crossorigin href="./js/main-0b5e4c7b.js">
-      <link rel="stylesheet" href="./css/main-7e29bee3.css">
+      <script type="module" crossorigin src="./js/preguntasFrecuentes-50316595.js"></script>
+      <link rel="modulepreload" crossorigin href="./js/main-996cb64d.js">
+      <link rel="stylesheet" href="./css/main-bc881a54.css">
     </head>
     <body>
           <!-- Google Tag Manager (noscript) -->
@@ -69,7 +69,7 @@
                                 <custom-accordion
                                     id="faq-6"
                                     title="¿En dónde puedo consultar los términos y condiciones de la campaña de Horas Azules?"
-                                    content="Consulta los términos y condiciones en <a href='http://ivt.mx/tycclas' target='_blank'> http://ivt.mx/tycclas</a>"
+                                    content="Consulta los términos y condiciones en <a href='http://ivt.mx/tycclas' target='_blank' id='faqs-tyc'>  http://ivt.mx/tycclas</a>"
                                 ></custom-accordion>
                             </div>
                         </div>
@@ -95,6 +95,11 @@
                         metrica7A(accordionItem.getAttribute('title'))
                     })
                });
+
+               document.getElementById('faqs-tyc').addEventListener('click',(elem)=>{
+                   // console.log(elem.target.innerText);
+                    metrica7B(elem.target.innerText)
+               })
                
             });
         </script>
