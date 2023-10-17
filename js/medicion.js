@@ -293,6 +293,18 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    function metrica7B(nd3){
+
+        
+        dataLayer.push({
+            nd1:'Horas azules BanCoppel - Ayuda',
+            nd2:'Preguntas frecuentes',
+            nd3:'¿En dónde puedo consultar los términos y condiciones de la campaña de Horas Azules? - '+nd3 ,
+            nd4:'',
+            event:'horasAzulesBcpl'
+            });
+    }
+
     /**
      * funciones 8 y 8A
      */
