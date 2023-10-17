@@ -66,7 +66,7 @@
                                 <custom-accordion
                                     id="faq-6"
                                     title="¿En dónde puedo consultar los términos y condiciones de la campaña de Horas Azules?"
-                                    content="Consulta los términos y condiciones en <a href='http://ivt.mx/tycclas' target='_blank'> http://ivt.mx/tycclas</a>"
+                                    content="Consulta los términos y condiciones en <a href='http://ivt.mx/tycclas' target='_blank' id='faqs-tyc'>  http://ivt.mx/tycclas</a>"
                                 ></custom-accordion>
                             </div>
                         </div>
@@ -92,6 +92,11 @@
                         metrica7A(accordionItem.getAttribute('title'))
                     })
                });
+
+               document.getElementById('faqs-tyc').addEventListener('click',(elem)=>{
+                   // console.log(elem.target.innerText);
+                    metrica7B(elem.target.innerText)
+               })
                
             });
         </script>

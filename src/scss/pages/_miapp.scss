@@ -125,6 +125,15 @@
             p{
                 @include text-sm-18;               
                 font-family: var(--font-primaria-regular);
+                
+            }
+
+            p.ficha-producto{
+                margin-top: 1rem;
+                a{
+                    color:var(--color-azul-2);
+                    text-underline-offset: 8px;
+                }
             }
         }
     }
@@ -261,7 +270,10 @@
             p{
                 font-size: 1.25rem !important;
                 line-height: 1.75rem !important;            
-               
+                a{
+                    color:var(--color-azul-2);
+                    text-underline-offset: 8px;
+                }
             }
         }
     }
