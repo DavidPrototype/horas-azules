@@ -92,7 +92,7 @@
                             <li><a href="https://www.bancoppel.com/acerca_bancoppel/quienes_somos.html?v=2" target="_blank">¿Quiénes somos?</a></li>
                             <li><a href="https://www.bancoppel.com/acerca_bancoppel/info_corp.html?v=2" target="_blank">Informacion Corporativa</a></li>
                             <li><a href="https://www.bancoppel.com/imagenes/1001/pdf.php?id=4836a6a5" target="_blank">Tarifas y comisiones de crédito</a></li>                            
-                            <li><a href="https://www.bancoppel.com/acerca_bancoppel/ipab.html" target="_blank">Productos protegidos por IPAB</a></li>                            
+                                                        
                             
                         </ul>
                     </div>
@@ -161,13 +161,11 @@
                 </div>
 
                 <div class="footer--sponsors">
-                    <a href="https://www.gob.mx/ipab" target="_blank">
-                        <img src="img/ipab.svg" alt="Logo IPAB"  title="IPAB"/>
-                    </a>
+                    
                     <a href="https://www.bancoppel.com/modal_bcopp/buro.html" target="_blank">
                         <img src="img/buro.svg" alt="Logo Fintech" title="Buro"/>
                     </a>
-                    <a href="javascript:void(0);" >
+                    <a href="https://www.fintechmexico.org/" target="_blank">
                         <img src="img/fintech.svg" alt="Logo Fintech"  title="FINTECH"/>
                     </a>
                     <a href="https://www.bancoppel.com/main/index.html" target="_blank">
