@@ -21,11 +21,13 @@ export default class Footer extends HTMLElement {
                             <li><a href="https://www.bancoppel.com/acerca_bancoppel/quienes_somos.html?v=2" target="_blank">¿Quiénes somos?</a></li>
                             <li><a href="https://www.bancoppel.com/acerca_bancoppel/info_corp.html?v=2" target="_blank">Informacion Corporativa</a></li>
                             <li><a href="https://www.bancoppel.com/imagenes/1001/pdf.php?id=4836a6a5" target="_blank">Tarifas y comisiones de crédito</a></li>                            
+                            <li><a href="https://www.bancoppel.com/acerca_bancoppel/ipab.html" target="_blank">Productos protegidos por IPAB</a></li>                            
                             
                         </ul>
                     </div>
                     <div class="col-12 col-lg-6" id="unidad">
                         <h3>Unidad Especializada Bancoppel Condusef</h3>
+                        
                         <p>
                             BanCoppel, S.A., Institución de Banca Múltiple recibe las consultas, reclamaciones o
                             aclaraciones en su Unidad Especializada de Atención a Usuarios, ubicada en 
@@ -88,15 +90,25 @@ export default class Footer extends HTMLElement {
                 </div>
 
                 <div class="footer--sponsors">
-                    <a href="javascript:void(0);">
-                        <img src="img/icon-fintech.svg" alt="Logo Fintech"  title="FINTECH"/>
+                    <a href="https://www.gob.mx/ipab" target="_blank">
+                        <img src="img/ipab.svg" alt="Logo IPAB"  title="IPAB"/>
                     </a>
                     <a href="https://www.bancoppel.com/modal_bcopp/buro.html" target="_blank">
                         <img src="img/buro.svg" alt="Logo Fintech" title="Buro"/>
                     </a>
+                    <a href="javascript:void(0);" >
+                        <img src="img/fintech.svg" alt="Logo Fintech"  title="FINTECH"/>
+                    </a>
+                    <a href="https://www.bancoppel.com/main/index.html" target="_blank">
+                        <img src="img/bancoppel_footer.svg" alt="Logo Bancoppel"  title="Logo Bancoppel"/>
+                    </a>
+                  
                 </div>
                 <div class="footer--legales">
-                    <p>
+                <p>
+                BanCoppel S.A. Institución de Banca Múltiple es una persona moral distinta a Coppel S.A. DE C.V., así como de cualquiera de sus negocios asociados o vinculados.
+                </p>    
+                <p>
                         Copyrigth 2022
                         <span class="asociacion"
                             >Bancoppel S.A Institución de Banca Múltiple</span

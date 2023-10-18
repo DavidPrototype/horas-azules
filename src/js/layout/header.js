@@ -12,8 +12,8 @@ export default class Header extends HTMLElement {
                 <div class="nav__logo">
                     <div class="custom-container">
                         <a
-                            href="https://www.bancoppel.com/main/index.html"
-                            target="_blank"
+                            data-bs-toggle="modal" 
+                            data-bs-target="#modal-salida-logo"
                         >
                             <img src="img/Logotipo.svg" alt="Logo BanCoppel" />
                         </a>
@@ -30,6 +30,7 @@ export default class Header extends HTMLElement {
                     
                 </nav>
         </header>
+        <modal-salida id-modal="modal-salida-logo" link-btn-salida="https://www.bancoppel.com/main/index.html"></modal-salida>
         `;
 
         this.getAttribute("nav-active")
