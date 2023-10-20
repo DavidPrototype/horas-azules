@@ -5,7 +5,7 @@
     font-family: var(--font-secundaria-regular);
     
         a{
-            text-decoration: none;
+            text-decoration: underline;
         }
 
     .row {
@@ -89,7 +89,15 @@
                 width: 0;
             }
         }
-      
+        p.copyright{
+            margin:0;
+               
+
+        }
+        p#links-legal{
+            margin-top: 0;
+           
+        }
 
         .asociacion {
             color: var(--color-amarillo);
@@ -133,7 +141,7 @@
         }
 
         &--sponsors {
-            margin: 48px auto;
+            margin: 48px 0 0 0;
 
             img {
                 max-height: 39px;
@@ -143,6 +151,17 @@
         &--legales {
             p {
                 @include text-sm-14;
+            }
+            p.sitio-admin{
+                margin-bottom: 2rem;
+            }
+            p.copyright,p.sacv{               
+              
+                line-height: 22px;   
+            }
+            p#links-legal{
+               
+                line-height: 22px;       
             }
         }
     }
