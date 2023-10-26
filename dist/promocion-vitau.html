@@ -40,9 +40,7 @@
                             <div class="main-promo--info">
                                 <h1><strong>Farmacias VITAU</strong></h1>
                                 <p>
-                                    Recibe un 10% de descuento en compras
-                                    máximas de $250 pesos con el código
-                                    bancoppel en
+                                    Recibe 10% de descuento con el código bancoppel en
                                     <a
                                         data-bs-toggle="modal"
                                         data-bs-target="#modal-salida-vitau"
@@ -51,8 +49,8 @@
                                     </a>
                                 </p>
                                 <h5>
-                                    Vigencia del 24 de julio del 2023 al 24 de
-                                    septiembre del 2024
+                                    Vigencia del 24 de julio del 2023 al 29 de
+                                    febrero de 2024
                                 </h5>
                             </div>
                             <picture class="img-codigo">
@@ -93,8 +91,8 @@
                     <div class="custom-container">
                         <h5><strong>Términos y Condiciones</strong></h5>
                         <p>
-                            Un cupón por usuario. El descuento máximo es de $250
-                            pesos por compra. Se aplican Términos y Condiciones.
+                            Un cupón por usuario. El descuento máximo es de $500 pesos por compra. 
+                            Se aplican Términos y Condiciones.
                         </p>
                     </div>
                 </div>
@@ -126,14 +124,14 @@
                 })
 
                 //Metrica MOdal
-                const modalSalida = document.querySelector('modal-salida .modal')
-                modalSalida.addEventListener('shown.bs.modal', () => {
+                const modalSalidaVitau = document.querySelector('modal-salida[id-modal="modal-salida-vitau"] .modal')
+                modalSalidaVitau.addEventListener('shown.bs.modal', () => {
                     metrica2B('Farmacias VITAU');
                     
                 })
 
-                const modalbutton = document.querySelector('modal-salida .modal custom-boton')
-                modalbutton.addEventListener('click',function(){
+                const modalSalidaVitauButton = document.querySelector('modal-salida[id-modal="modal-salida-vitau"] .modal custom-boton')
+                modalSalidaVitauButton.addEventListener('click',function(){
                     metrica2C('Farmacias VITAU');
                 });
 

@@ -54,6 +54,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
         });
 
+        const unidadLinkFooter = document.querySelectorAll('footer #unidad a');
+        unidadLinkFooter.forEach(unidad => {
+            unidad.addEventListener('click',function(){
+                
+                metrica11B( unidad.innerText);
+            });
+        });
 
         const legalesFooter = document.querySelectorAll('.footer--legales #links-legal a');
         legalesFooter.forEach(legal => {
@@ -61,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 
                 metrica11F( legal.innerText);
             });
-    });
+     });
    
 });
    /**
@@ -109,6 +116,37 @@ document.addEventListener('DOMContentLoaded', function () {
             event:'horasAzulesBcpl',
         });
     }
+    function metrica1D(opcion){
+   
+        dataLayer.push({
+            nd1:'Horas azules BanCoppel',
+            nd2:'Términos y Condiciones Generales',
+            nd3:opcion,
+            nd4:'',
+            event:'horasAzulesBcpl'
+            });
+    }
+
+    function metrica1E(){
+        dataLayer.push({
+            nd1:'Horas azules BanCoppel',
+            nd2:'Modal: Estás a punto de salir del sitio Horas Azules - Tabla de tasas y comisiones',
+            nd3:'Llegada',
+            nd4:'',
+            event:'horasAzulesBcpl'
+            });
+    }
+
+    function metrica1F(){
+        dataLayer.push({
+            nd1:'Horas azules BanCoppel',
+            nd2:'Modal: Estás a punto de salir del sitio Horas Azules - Tabla de tasas y comisiones',
+            nd3:'Continuar',
+            nd4:'',
+            event:'horasAzulesBcpl'
+            });
+    }
+ 
 
 /**
     * Funciones 2 : A, B, C
@@ -125,13 +163,15 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function metrica2_2(nd2){
+       
+
         dataLayer.push({
-            nd1:'Horas azules BanCoppel',
-            nd2:'Llegada - ' + nd2,
+            nd1:'Horas azules BanCoppel - Promociones',
+            nd2:'Llegada - '+ nd2,
             nd3:'',
             nd4:'',
             event:'horasAzulesBcpl'
-        });
+            });
     }
 
     function metrica2A(nd2, nd3){
@@ -145,20 +185,22 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    function metrica2B(nd2){
+    function metrica2B(nombre_promocion){
         dataLayer.push({
             nd1:'Horas azules BanCoppel - Promociones',
-            nd2:'Modal: Estás a punto de salir del sitio Horas Azules - '+ nd2,
+            nd2:'Modal: Estás a punto de salir del sitio Horas Azules - '+ nombre_promocion,
             nd3:'Llegada',
             nd4:'',
             event:'horasAzulesBcpl'
             });
+
+           
     }
 
-    function metrica2C(nd2){
+    function metrica2C(nombre_promocion){
         dataLayer.push({
             nd1:'Horas azules BanCoppel - Promociones',
-            nd2:'Modal: Estás a punto de salir del sitio Horas Azules - ' + nd2,
+            nd2:'Modal: Estás a punto de salir del sitio Horas Azules - ' + nombre_promocion,
             nd3:'Continuar',
             nd4:'',
             event:'horasAzulesBcpl'
@@ -249,6 +291,63 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    function metrica5E(){
+        dataLayer.push({
+            nd1:'Horas azules BanCoppel - Mi tarjeta',
+            nd2:'Ficha del producto',
+            nd3:'',
+            nd4:'',
+            event:'horasAzulesBcpl'
+            });
+    }
+    function metrica5F(){
+        dataLayer.push({
+            nd1:'Horas azules BanCoppel - Mi tarjeta',
+            nd2:'Modal: Estás a punto de salir del sitio Horas Azules - Ficha del producto',
+            nd3:'Llegada',
+            nd4:'',
+            event:'horasAzulesBcpl'
+            });
+    }
+    function metrica5G(){
+        dataLayer.push({
+            nd1:'Horas azules BanCoppel - Mi tarjeta',
+            nd2:'Modal: Estás a punto de salir del sitio Horas Azules - Ficha del producto',
+            nd3:'Continuar',
+            nd4:'',
+            event:'horasAzulesBcpl'
+            });
+    }
+
+    function metrica5H(opcion){
+        dataLayer.push({
+            nd1:'Horas azules BanCoppel - Mi tarjeta',
+            nd2:opcion,
+            nd3:'Selección ficha del producto',
+            nd4:'',
+            event:'horasAzulesBcpl'
+            });
+    }
+
+    function metrica5I(opcion_fecha){
+        dataLayer.push({
+            nd1:'Horas azules BanCoppel - Mi tarjeta',
+            nd2:'Modal: Estás a punto de salir del sitio Horas Azules - '+ opcion_fecha,
+            nd3:'Llegada',
+            nd4:'',
+            event:'horasAzulesBcpl'
+            });
+    }
+
+    function metrica5J(opcion_fecha){
+        dataLayer.push({
+            nd1:'Horas azules BanCoppel - Mi tarjeta',
+            nd2:'Modal: Estás a punto de salir del sitio Horas Azules - ' + opcion_fecha,
+            nd3:'Continuar',
+            nd4:'',
+            event:'horasAzulesBcpl'
+            });
+    }
 
     /**
      * Funciones 6 y 6A

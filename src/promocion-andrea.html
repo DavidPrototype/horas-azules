@@ -125,14 +125,15 @@
                 //
 
                 //Modal Metrica
-                const modalSalida = document.querySelector('modal-salida .modal')
-                modalSalida.addEventListener('shown.bs.modal', () => {
+                const modalSalidaAdrea = document.querySelector('modal-salida[id-modal="modal-salida-andrea"] .modal')
+                modalSalidaAdrea.addEventListener('shown.bs.modal', () => {
                     metrica2B('Andrea');
+                    
                     
                 })
 
-                const modalbutton = document.querySelector('modal-salida .modal custom-boton')
-                modalbutton.addEventListener('click',function(){
+                const modalSalidaAdreabutton = document.querySelector('modal-salida[id-modal="modal-salida-andrea"] .modal custom-boton')
+                modalSalidaAdreabutton.addEventListener('click',function(){
                     metrica2C('Andrea');
                 });
             });
