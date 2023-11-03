@@ -479,7 +479,7 @@ document.addEventListener('DOMContentLoaded', function () {
             nd2: nd2,
             nd3:'',
             nd4:'',
-            event:'clicMenuSuperiorGeneral'
+            event:'clicMenuInferiorGeneral'
         });
     }
     function metrica11C(nd3){
