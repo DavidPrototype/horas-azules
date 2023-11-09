@@ -10,6 +10,7 @@ export default {
         outDir: path.resolve(__dirname, "dist"),
         rollupOptions: {
             input: {
+                login: path.resolve(__dirname, "src/login.html"),
                 index: path.resolve(__dirname, "src/index.html"),
                 miTarjeta: path.resolve(__dirname, "src/mi-tarjeta.html"),
                 miApp: path.resolve(__dirname, "src/mi-app.html"),

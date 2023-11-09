@@ -299,8 +299,10 @@
 
         <script>
             document.addEventListener('DOMContentLoaded', function () {
-                
-                
+                // console.log(localStorage.getItem('autenticado'))
+                if(localStorage.getItem('autenticado') != 'si'){
+                    window.location.href ='login.html';  
+                }
 
                 metrica1();
 

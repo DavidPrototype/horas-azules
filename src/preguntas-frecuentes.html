@@ -80,6 +80,9 @@
         <script src="js/medicion.js"></script>
         <script>
             document.addEventListener('DOMContentLoaded', function () {
+                if(localStorage.getItem('autenticado') != 'si'){
+                    window.location.href ='login.html';  
+                }
                 metrica7();    
                 metrica1A('Ayuda');
                 metrica10A('Ayuda');
