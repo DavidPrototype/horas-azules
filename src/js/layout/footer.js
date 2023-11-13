@@ -78,13 +78,18 @@ export default class Footer extends HTMLElement {
                             /></a>
                             <a href="https://www.linkedin.com/company/bancoppel/" target="_blank"><img
                                 src="img/linkedin.svg"
-                                title="Logo Linkedin"
+                                title="Linkedin"
                                 alt="Logo Linkedin"
                             /></a>
                             <a href="https://www.tiktok.com/@bancoppel" target="_blank"><img
                                 src="img/tiktok.svg"
-                                title="Logo Tik Tok"
+                                title="Tik Tok"
                                 alt="Logo Tik Tok"
+                            /></a>
+                            <a href="https://wa.me/5215530559922" target="_blank"><img
+                                src="img/whatsapp.svg"
+                                title="Whatsapp"
+                                alt="Whatsapp"
                             /></a>
                             
                         </div>
