@@ -22,6 +22,9 @@
         font-family: var(--font-secundaria-bold);
         @include text-sm-16;
     }
+    #unidad p{
+        line-height: 22px;
+    }
     p{
         margin: 1rem 0;
         @include text-sm-14;

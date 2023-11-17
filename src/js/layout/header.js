@@ -29,8 +29,8 @@ export default class Header extends HTMLElement {
                 </div>
                     
                 </nav>
-        </header>
-        <modal-salida id-modal="modal-salida-logo" link-btn-salida="https://www.bancoppel.com/main/index.html"></modal-salida>
+                </header>
+                <modal-salida id-modal="modal-salida-logo" link-btn-salida="https://www.bancoppel.com/main/index.html"></modal-salida>
         `;
 
         this.getAttribute("nav-active")

@@ -460,6 +460,27 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    function metrica10B(){
+
+        dataLayer.push({
+            nd1:'Menú superior',
+            nd2:'Modal: Estás a ,punto de salir del sitio Horas Azules - Logo Bancoppel',
+            nd3:'Llegada',
+            nd4:'',
+            event:'clicMenuSuperiorGeneral'
+            });
+    }
+
+    function metrica10C(){
+        dataLayer.push({
+            nd1:'Menú superior',
+            nd2:'Modal: Estás a punto de salir del sitio Horas Azules - Logo Bancoppel',
+            nd3:'Continuar',
+            nd4:'',
+            event:'clicMenuSuperiorGeneral'
+        });
+    }
+
     /**
      * Funcion 11-A, 11-B, 11-C, 11-D, 11-E, 11-F
      */

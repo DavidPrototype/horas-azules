@@ -84,15 +84,15 @@
                     window.location.href ='login.html';  
                 }
                 metrica7();    
-                metrica1A('Ayuda');
-                metrica10A('Ayuda');
+                // metrica1A('Ayuda');
+                // metrica10A('Ayuda');
                 //Metrica 1-C
 
-                const accordionItems = document.querySelectorAll('custom-accordion');
+                const accordionItems = document.querySelectorAll('custom-accordion .accordion-item h2');
                 accordionItems.forEach(accordionItem => {
                     accordionItem.addEventListener('click',function(){
                       
-                        metrica7A(accordionItem.getAttribute('title'))
+                        metrica7A(accordionItem.innerText)
                     })
                });
 

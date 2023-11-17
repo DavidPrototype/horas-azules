@@ -285,7 +285,7 @@
 
         <modal-salida id-modal="modal-salida-ubicacion" link-btn-salida="https://www.bancoppel.com/geolocalizacion/index.html"></modal-salida>
         <modal-salida id-modal="modal-tasas-comisiones" link-btn-salida="https://www.bancoppel.com/imagenes/1001/pdf.php?id=4836a6a5"></modal-salida>
-      
+        
         <script type="module" src="./js/main.js"></script>
         <script type="module" src="./js/home.js"></script>
         <script type="module" src="./js/layout/promociones.js"></script>
@@ -300,8 +300,8 @@
 
                 metrica1();
 
-                metrica1A('Inicio');
-                metrica10A('Inicio');
+                // metrica1A('Inicio');
+                // metrica10A('Inicio');
                 //Metrica 1-B
                 const cardPromos = document.querySelectorAll('.card-promo');
                 cardPromos.forEach(card => {
@@ -355,6 +355,18 @@
                 const modalTycBtn = document.querySelector('modal-salida[id-modal="modal-tasas-comisiones"] .modal custom-boton')
                 modalTycBtn.addEventListener('click',function(){
                     metrica1F();
+                });
+
+                //Metrica Header Logo 
+                
+                const modalHeaderLogo = document.querySelector('modal-salida[id-modal="modal-salida-logo"] .modal')
+                modalHeaderLogo.addEventListener('shown.bs.modal', () => {
+                   
+                    metrica10B();
+                })
+                const modalHeaderLogoBtn = document.querySelector('modal-salida[id-modal="modal-salida-logo"] .modal custom-boton')
+                modalHeaderLogoBtn.addEventListener('click',function(){
+                    metrica10C();
                 });
 
                 
