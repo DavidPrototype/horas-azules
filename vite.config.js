@@ -34,6 +34,7 @@ export default {
                 promoVitau: path.resolve(__dirname, "src/promocion-vitau.html"),
                 error404: path.resolve(__dirname, "src/400.html"),
                 error400: path.resolve(__dirname, "src/404.html"),
+                error502: path.resolve(__dirname, "src/502.html"),
             },
             output: {
                 chunkFileNames: "js/[name]-[hash].js",
