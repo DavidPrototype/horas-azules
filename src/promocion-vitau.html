@@ -133,8 +133,18 @@
                     metrica2C('Farmacias VITAU');
                 });
 
-
-               
+                    //Metrica Header Logo 
+                
+               const modalHeaderLogo = document.querySelector('modal-salida[id-modal="modal-salida-logo"] .modal')
+                modalHeaderLogo.addEventListener('shown.bs.modal', () => {
+                   
+                    metrica10B();
+                })
+                const modalHeaderLogoBtn = document.querySelector('modal-salida[id-modal="modal-salida-logo"] .modal custom-boton')
+                modalHeaderLogoBtn.addEventListener('click',function(){
+                    metrica10C();
+                });
+                
 
             });
         </script>
