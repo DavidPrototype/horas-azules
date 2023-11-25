@@ -54,13 +54,28 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
         });
 
-        const unidadLinkFooter = document.querySelectorAll('footer #unidad a');
-        unidadLinkFooter.forEach(unidad => {
-            unidad.addEventListener('click',function(){
+        // const unidadLinkFooter = document.querySelectorAll('footer #unidad a');
+        // unidadLinkFooter.forEach(unidad => {
+        //     unidad.addEventListener('click',function(){
                 
-                metrica11B( unidad.innerText);
-            });
+        //         metrica11B( unidad.innerText);
+        //     });
+        // });
+        //Metricas Footer Unidad
+
+        document.getElementById('lnk-unidadespec').addEventListener('click',()=>{
+            metrica11B( 'Unidad Especializada de Atención a Usuarios')
         });
+        document.getElementById('lnk-condusef').addEventListener('click',()=>{
+            metrica11B( 'www.condusef.gob.mx')
+        });
+        document.getElementById('lnk-correobanco').addEventListener('click',()=>{
+            metrica11B( 'correo:unebancoppel.com')
+        });
+        document.getElementById('lnk-correoasesoria').addEventListener('click',()=>{
+            metrica11B( 'correo:asesoriacondusef.gob.mx')
+        });
+
 
         const legalesFooter = document.querySelectorAll('.footer--legales #links-legal a');
         legalesFooter.forEach(legal => {
