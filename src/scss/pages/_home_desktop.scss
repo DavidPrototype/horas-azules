@@ -85,7 +85,8 @@
 
             picture {
                 height: 576px;
-                border-radius: 80px 0px 0 80px;
+                // border-radius: 80px 0px 0 80px;
+                border-radius: 80px;
 
                 img {
                     height: 100%;
@@ -163,4 +164,26 @@
     }
 
     
+}
+
+@media (min-width: 1440px) {
+
+    .efectivo{
+        &--image {
+           
+           
+           
+
+            picture {
+                
+
+                img {
+                    
+                    object-position: center;
+                }
+            }
+
+          
+        }
+    }
 }
