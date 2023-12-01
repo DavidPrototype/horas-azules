@@ -5,18 +5,25 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Hora Azules | Promociones</title>
-          <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-P7456C6L');</script>
-        <!-- End Google Tag Manager -->
+
+       
+            <!-- Google Tag Manager -->
+            <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-P7456C6L');</script>
+            <!-- End Google Tag Manager -->
+            
+      <script type="module" crossorigin src="./js/main-b2b3a586.js"></script>
+      <link rel="stylesheet" href="./css/main-ff6d4904.css">
     </head>
     <body>
-         <!-- Google Tag Manager (noscript) -->
-         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P7456C6L" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-         <!-- End Google Tag Manager (noscript) -->
+        <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P7456C6L"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
         <custom-header></custom-header>
         <main class="main-promo">
             <section>
@@ -28,41 +35,52 @@
                                 Regresar</a
                             >
                         </div>
+
                         <div class="col-12 col-lg-6 col-xl-11 offset-xl-1">
                             <div class="main-promo--info">
-                                <h1><strong>Costco</strong></h1>
+                                <h1><strong>Farmacias VITAU</strong></h1>
                                 <p>
-                                    Afíliate o renueva tu membresía y obtén $100 pesos. Además, inscríbete al Programa de Cargo Automático con tu Tarjeta BanCoppel y obtén un certificado de $150 pesos.
+                                    Recibe 10% de descuento con el código bancoppel en
+                                    <a
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#modal-salida-vitau"
+                                    >
+                                        www.vitau.mx/
+                                    </a>
                                 </p>
+                                <h5>
+                                    Vigencia del 24 de julio del 2023 al 29 de
+                                    febrero de 2024
+                                </h5>
                             </div>
-                            <!-- <picture class="img-codigo">
+                            <picture class="img-codigo">
                                 <source
-                                    srcset="img/cupon-3.webp"
+                                    srcset="img/cupon-2.webp"
                                     type="image/webp"
                                 />
                                 <img
-                                    src="img/cupon-3.png"
+                                    src="img/cupon-2.png"
                                     alt=""
                                     class="w-100"
                                 />
-                            </picture> -->
+                            </picture>
                             <picture class="img-promo">
                                 <source
                                     media="(min-width:1280px )"
-                                    srcset="img/costco-desktop.webp"
+                                    srcset="img/promocion-2-desktop.webp"
                                     type="image/webp"
                                 />
                                 <source
                                     media="(min-width:1280px )"
-                                    srcset="img/costco-desktop.png"
+                                    srcset="img/promocion-2-desktop.jpg"
                                 />
                                 <source
-                                    srcset="img/costco-desktop.webp"
+                                    srcset="img/promocion-2.webp"
                                     type="image/webp"
                                 />
                                 <img
                                     class="w-100"
-                                    src="img/costco-desktop.png"
+                                    src="img/promocion-2.png"
                                     alt=""
                                 />
                             </picture>
@@ -73,51 +91,48 @@
                     <div class="custom-container">
                         <h5><strong>Términos y Condiciones</strong></h5>
                         <p>
-                            Consulta términos y condiciones en 
-                            <a
-                            data-bs-toggle="modal"
-                            data-bs-target="#modal-salida-costco"
-                            >
-                             <span>www.costco.com.mx</span>
-                            </a>
+                            Un cupón por usuario. El descuento máximo es de $500 pesos por compra. 
+                            Se aplican Términos y Condiciones.
                         </p>
                     </div>
                 </div>
             </section>
         </main>
         <custom-footer></custom-footer>
+
         <modal-salida
-        id-modal="modal-salida-costco"
-        link-btn-salida="https://www.costco.com.mx/"
-    ></modal-salida>
-        <script type="module" src="./js/main.js"></script>
+            id-modal="modal-salida-vitau"
+            link-btn-salida="https://www.vitau.mx/"
+        ></modal-salida>
+
+        
         <script src="js/medicion.js"></script>
         <script>
             document.addEventListener('DOMContentLoaded', function () {
-                metrica2("costco");
-                metrica2_2('Costco');
+                metrica2("vitau");
+                metrica2_2("Farmacias VITAU");
 
                  //Boton regresar metrica 3-A
-                 const linkRegresar = document.querySelector('.link-back a');
-                 linkRegresar.addEventListener('click',()=>{
-                    metrica3A('Costco');
-                });
+                const linkRegresar = document.querySelector('.link-back a');
+                linkRegresar.addEventListener('click',()=>{
+                    metrica3A("Farmacias VITAU");
+                })
 
-                const promoLinkExterno = document.querySelector('.main-promo--legales a');
+                const promoLinkExterno = document.querySelector('.main-promo--info a');
                 promoLinkExterno.addEventListener('click',()=>{
-                    metrica2A('Costco', promoLinkExterno.innerText);
+                    metrica2A('Farmacias VITAU', promoLinkExterno.innerText);
                 })
-                //Modal Metrica
-                const modalSalidaCostco = document.querySelector('modal-salida[id-modal="modal-salida-costco"] .modal')
-                modalSalidaCostco.addEventListener('shown.bs.modal', () => {
-                    metrica2B('Costco');
-                    
+
+                //Metrica MOdal
+                const modalSalidaVitau = document.querySelector('modal-salida[id-modal="modal-salida-vitau"] .modal')
+                modalSalidaVitau.addEventListener('shown.bs.modal', () => {
+                    metrica2B('Farmacias VITAU');
                     
                 })
 
-                const modalSalidaCostcobutton = document.querySelector('modal-salida[id-modal="modal-salida-costco"] .modal custom-boton')
-                modalSalidaCostcobutton.addEventListener('click',function(){
-                    metrica2C('Costco');
+                const modalSalidaVitauButton = document.querySelector('modal-salida[id-modal="modal-salida-vitau"] .modal custom-boton')
+                modalSalidaVitauButton.addEventListener('click',function(){
+                    metrica2C('Farmacias VITAU');
                 });
 
                     //Metrica Header Logo 
@@ -131,6 +146,7 @@
                 modalHeaderLogoBtn.addEventListener('click',function(){
                     metrica10C();
                 });
+                
 
             });
         </script>
